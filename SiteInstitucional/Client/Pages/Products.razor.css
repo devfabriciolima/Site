@@ -1,0 +1,92 @@
+﻿.container-fluid.barra-botoes {
+    background-image: url(/img/products/buttonbar-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.barra-botoes .row > div {
+    background-image: url(/img/products/button-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #FFF;
+    border-radius: 0;
+    padding: 10px 0 25px 0;
+    height: 15em;
+    cursor: pointer;
+}
+
+    .barra-botoes .row > div div.image-container {
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: contain;
+        height: 90%;
+    }
+
+a[href="#waterpump"] div.image-container {
+    background-image: url(/img/products/waterpump-thumb.png);
+}
+
+a[href="#oilpump"] div.image-container {
+    background-image: url(/img/products/oilpump-thumb.png);
+}
+
+a[href="#fuelpump"] div.image-container {
+    background-image: url(/img/products/fuelpump-thumb.png);
+}
+
+a[href="#suctiontubes"] div.image-container {
+    background-image: url(/img/products/suctiontubes-thumb.png);
+}
+
+a[href="#reliefvalves"] div.image-container {
+    background-image: url(/img/products/reliefvalves-thumb.png);
+}
+
+a[href="#distributionkit"] div.image-container {
+    background-image: url(/img/products/distributionkit-thumb.png);
+}
+
+a[href="#pulleyandtensioner"] div.image-container {
+    background-image: url(/img/products/pulleyandtensioner-thumb.png);
+}
+
+.barra-botoes .row > div h3 {
+    bottom: .5em;
+    position: absolute;
+    font-family: 'Gotham-Black';
+    font-size: 1.2em;
+}
+
+.title {
+    font-family: 'Gotham-Bold';
+    font-size: 1.6em;
+}
+
+.sub-title {
+    font-family: 'Gotham-Black';
+    font-size: 1.6em;
+}
+
+.description {
+    font-family: 'Gotham-Book';
+    font-size: .9em;
+}
+
+@media (min-width: 768px) {
+    .product {
+        border-right: 4px solid #DB8E18;
+    }
+}
+
+.product > .row:not(:first-child) {
+    border-top: 1px dotted #FFFFFF;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.products > div {
+    scroll-margin-top: var(--header-height);
+}

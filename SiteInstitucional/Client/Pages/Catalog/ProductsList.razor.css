@@ -1,0 +1,50 @@
+﻿.title {
+    font-family: 'Gotham-Black';
+}
+
+    .title h1 {
+        font-size: 1.9em;
+    }
+
+    .title h3 {
+        font-size: 1.2em;
+    }
+
+.row.product-list {
+    border-top: 1px solid #2F2A31;
+}
+
+.row.product {
+    border-bottom: 1px solid #2F2A31;
+}
+
+.product img {
+    max-height: 100px;
+}
+
+.product span {
+    font-family: 'Gotham-Black';
+    font-size: .9em;
+    font-weight: 800;
+}
+
+.product h2 {
+    font-family: 'Gotham-Book';
+    font-size: 2.3em;
+    font-weight: 400;
+    display: inline;
+}
+
+.product-code {
+    border-right: 2px solid #DB8E18;
+}
+
+@media (max-width: 767px) {
+    .product-code {
+        border: none;
+    }
+}
+
+.btn-schadek {
+    height: auto;
+}

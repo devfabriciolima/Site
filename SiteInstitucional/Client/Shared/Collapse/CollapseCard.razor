@@ -1,0 +1,28 @@
+﻿<div class="card my-3">
+    <div class="card-header py-2 mb-0" id="@Id-heading">
+        <h2 class="mb-0">
+            <button class="btn btn-block text-left header-title text-uppercase p-0 collapsed" type="button"
+                    data-toggle="collapse" data-target="#@Id-collapse" aria-expanded="true"
+                    aria-controls="@Id-collapse">
+                @HeaderTitle
+            </button>
+        </h2>
+    </div>
+    <div id="@Id-collapse" class="collapse" aria-labelledby="@Id-heading">
+        <div class="card-body p-2">
+            @ChildContent
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    [Parameter]
+    public string HeaderTitle { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

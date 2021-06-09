@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A linha de Polia disponibilizada pela Schadek ao mercado possui Polias das Correias Dentadas, Auxiliar, Motor e da Direção Hidráulica, além de Polias do Alternador e do Tensionador, do ar-condicionado e outros modelos." xml:space="preserve">
+    <value>La línea de Poleas que Schadek pone a disposición en el mercado tiene poleas de la cadena, auxiliar, motor y de Dirección hidráulica, además de las poleas del Alternador y del tensor, aire acondicionado y otros modelos.</value>
+  </data>
+  <data name="A Schadek disponibiliza ao mercado diversas composições de Kit de Distribuição, podendo ser Simples, Parciais ou Completos." xml:space="preserve">
+    <value>Schadek coloca a disposición del mercado varias composiciones de kits de distribución, que pueden ser Simple, Parcial o Completo.</value>
+  </data>
+  <data name="Alta resistência e durabilidade." xml:space="preserve">
+    <value>Alta resistencia y durabilidad.</value>
+  </data>
+  <data name="Alto desempenho" xml:space="preserve">
+    <value>Alto desempeño</value>
+  </data>
+  <data name="Alto desempenho para motores eletrônicos." xml:space="preserve">
+    <value>Alto desempeño para motores electrónicos.</value>
+  </data>
+  <data name="Antes de trocar a bomba, verifique o estado do ventilador e da correia." xml:space="preserve">
+    <value>Antes de cambiar la bomba, verifique el estado del ventilador y de la correa.</value>
+  </data>
+  <data name="As Polias têm a função de mudar a direção da correia fazendo ela passar por outras áreas do motor, respeitando as oscilações das rotações e temperaturas sem que haja vibrações." xml:space="preserve">
+    <value>Las poleas tienen la función de cambiar la dirección de la cadena haciéndola pasar por otras zonas del motor, respetando las oscilaciones de las rotaciones y temperaturas sin que ocurran vibraciones.</value>
+  </data>
+  <data name="Assim como na bomba de óleo, só retire o produto da embalagem quando for aplicá-lo ao motor." xml:space="preserve">
+    <value>Igual que con la bomba de aceite, sólo retire el producto del embalaje cuando lo aplique en el motor.</value>
+  </data>
+  <data name="Atendem aos padrões de conformidade do equipamento original." xml:space="preserve">
+    <value>Atienden los estándares de conformidad del equipo original.</value>
+  </data>
+  <data name="BOMBAS D'ÁGUA" xml:space="preserve">
+    <value>BOMBAS DE AGUA</value>
+  </data>
+  <data name="BOMBAS DE COMBUSTÍVEL" xml:space="preserve">
+    <value>BOMBAS DE COMBUSTIBLE</value>
+  </data>
+  <data name="BOMBAS DE ÓLEO" xml:space="preserve">
+    <value>BOMBAS DE ACEITE</value>
+  </data>
+  <data name="Cada Kit de Distribuição possui componentes específicos, como por exemplo: Correntes, engrenagens, tensores, alavancas, guias e retentores. Verifique atentamente a lista de componentes em cada aplicação." xml:space="preserve">
+    <value>Cada Kit de Distribución tiene componentes específicos, tales como ejemplo: Cadenas, engranajes, tensores, palancas, guías y retenedores. Revise atentamente una lista de componentes en cada aplicación.</value>
+  </data>
+  <data name="Coloque óleo na bomba e no filtro antes de instalá-la. Jamais deixe-a funcionando no vazio." xml:space="preserve">
+    <value>Ponga aceite en la bomba y en el filtro antes de instalarla. Nunca la deje funcionando en vacío.</value>
+  </data>
+  <data name="Componentes de primeira linha" xml:space="preserve">
+    <value>Componentes de primer nivel</value>
+  </data>
+  <data name="Conhecidos como pescador, são responsáveis por succionar o fluido lubrificante do cárter e direcioná-lo à bomba de óleo." xml:space="preserve">
+    <value>Son responsables de succionar el líquido lubricante del cárter y dirigirlo a la bomba de aceite.</value>
+  </data>
+  <data name="Durabilidade superior." xml:space="preserve">
+    <value>Durabilidad superior.</value>
+  </data>
+  <data name="Essa nova linha de produto da Schadek Automotive é composta por mais de 300 códigos, desenvolvidos com a mais alta tecnologia e a qualidade original. Cobrindo 90% da frota nacional leve e pesada." xml:space="preserve">
+    <value>Esta nueva línea de producto de Schadek Automotive es compuesta por más de 300 códigos, desarrollados con la más alta tecnología y la calidad original. Cubriendo 90% de la flota nacional leve y pesada.</value>
+  </data>
+  <data name="Estrutura resistente a durável" xml:space="preserve">
+    <value>Estructura resistente a durable</value>
+  </data>
+  <data name="Estrutura resistente e durável" xml:space="preserve">
+    <value>Estructura resistente y durable</value>
+  </data>
+  <data name="Excessos de vibração na marcha lenta, ruídos ou falhas no sistema da correia de acessórios, ou problemas na parte elétrica do veículo, podem ser sinais de que as Polias e ou Tensionadores estejam com problemas." xml:space="preserve">
+    <value>Vibración excesiva en marcha lenta, sonidos o fallas en el sistema de la cadena de accesorios, o problemas en la parte eléctrica del vehículo, pueden ser señales de que las poleas y o los tensores están teniendo problemas.</value>
+  </data>
+  <data name="Faça a limpeza do tanque e substitua os filtros, mangueiras e abraçadeiras toda vez que trocar a bomba de combustível." xml:space="preserve">
+    <value>Haga la limpieza del tanque y reemplace los filtros, mangueras y abrazaderas todas las veces que cambie la bomba de combustible.</value>
+  </data>
+  <data name="Fica a dica" xml:space="preserve">
+    <value>Sugerencia</value>
+  </data>
+  <data name="Garantia Schadek" xml:space="preserve">
+    <value>Garantía Schadek</value>
+  </data>
+  <data name="Já os Tensionadores determinam a tensão constante nas correrias, para que elas fiquem sempre em contato com as polias. A linha de Tensionadores é composta por Tensionadores para as Correias Dentadas, do Alternador, da Direção Hidráulica, do Motor e outras mais." xml:space="preserve">
+    <value>Los tensores, por su parte, determinan la tensión constante en las cadenas, para que estén siempre en contacto con las poleas. La línea de tensores está compuesta por Tensores para las cadenas, del Alternador, Dirección hidráulica, el Motor y otros.</value>
+  </data>
+  <data name="KIT DE DISTRIBUIÇÃO" xml:space="preserve">
+    <value>KIT DE DISTRIBUCIÓN</value>
+  </data>
+  <data name="Limpe as superfícies de assentamento, no bloco e na bomba. Nunca use estopa, pois solta fiapos que podem obstruir o fluxo de água." xml:space="preserve">
+    <value>Limpie las superficies de asentamiento, en el bloque y en la bomba. Nunca use estopa, pues suelta hilachas que pueden obstruir el flujo de agua.</value>
+  </data>
+  <data name="Melhor desempenho para cada aplicação" xml:space="preserve">
+    <value>Mejor desempeño para cada aplicación</value>
+  </data>
+  <data name="Na manutenção do sistema de lubrificação, troque sempre a válvula de alívio. Se estiver em mau estado pode interferir diretamente no funcionamento do sistema." xml:space="preserve">
+    <value>En el mantenimiento del sistema de lubricación, cambie siempre la válvula de alivio. Si está en mal estado puede interferir directamente en el funcionamiento del sistema.</value>
+  </data>
+  <data name="Nossos diferenciais" xml:space="preserve">
+    <value>Nuestras ventajas</value>
+  </data>
+  <data name="Nunca utilize cola, adesivo ou silicone para melhorar a vedação, isso é desnecessário e perigoso. Só a junta e/ou anel de vedação são suficientes." xml:space="preserve">
+    <value>Nunca utilice pegamento, adhesivo o silicona para mejorar el sellado, esto es innecesario y peligroso. Sólo la junta y/o anillo de sellado son suficientes.</value>
+  </data>
+  <data name="Não instale o produto no veículo caso a embalagem esteja violada, ou se o produto apresentar qualquer sinal de que esteja danificado, amassado, quebrado ou com oxidações." xml:space="preserve">
+    <value>No instale el producto en el vehículo si el empaque este violado, o si el producto muestra cualquier señal de que este dañado, aplastado, quebrado o con oxidaciones.</value>
+  </data>
+  <data name="O equilíbrio, eficiência e a sincronização de todos estes componentes é muito importante para o funcionamento do motor." xml:space="preserve">
+    <value>El equilibrio, la eficiencia y sincronización de todos estos componentes es muy importante para el funcionamiento del motor.</value>
+  </data>
+  <data name="O ideal é que em todas as trocas de correias, os tensionadores também sejam trocados." xml:space="preserve">
+    <value>El ideal es que, en todos los cambios de cadenas, los tensores también sean cambiados.</value>
+  </data>
+  <data name="O melhor desempenho para cada aplicação." xml:space="preserve">
+    <value>El mejor desempeño para cada aplicación.</value>
+  </data>
+  <data name="Os componentes do Kit de Distribuição SCHADEK possuem a garantia e a qualidade dos produtos da Schadek Automotive. Empresa líder de mercado em Bombas de Óleo e de Água, que está há 55 anos no mercado." xml:space="preserve">
+    <value>Los componentes del Kit de Distribución SCHADEK tienen garantía y la Calidad de los productos de Schadek Automotive. Compañía líder en el mercado de Bombas de Aceite y de Agua, que lleva 55 años en el mercado.</value>
+  </data>
+  <data name="Padrão de qualidade original" xml:space="preserve">
+    <value>Padrón de Calidad original</value>
+  </data>
+  <data name="Para melhor funcionamento do tubo de sucção, jamais retire a tela de proteção. Ela evita a entrada de partículas de sujeira na bomba de óleo e no próprio motor." xml:space="preserve">
+    <value>Para mejor funcionamiento del tubo de succión, nunca retire la tela de protección. Ella evita la entrada de partículas de suciedad en la bomba de aceite y en el propio motor.</value>
+  </data>
+  <data name="POLIAS" xml:space="preserve">
+    <value>POLEAS</value>
+  </data>
+  <data name="POLIAS E TENSIONADORES" xml:space="preserve">
+    <value>POLEAS Y TENSORES</value>
+  </data>
+  <data name="Qualidade de fabricação Schadek." xml:space="preserve">
+    <value>Calidad de fabricación Schadek.</value>
+  </data>
+  <data name="Qualidade e confiança líder de mercado" xml:space="preserve">
+    <value>Calidad y confiabilidad líderes en el mercado</value>
+  </data>
+  <data name="Qualidade e confiança líder de mercado." xml:space="preserve">
+    <value>Calidad y confianza líder de mercado.</value>
+  </data>
+  <data name="Recomenda-se a troca das Polias e dos Tensionadores de forma preventiva, a cada cinco anos ou 60 mil quilômetros." xml:space="preserve">
+    <value>Se recomienda cambiar las poleas y tensores de forma preventiva, cada cinco años o 60 mil kilómetros.</value>
+  </data>
+  <data name="Recomenda-se a troca do kit de distribuição de forma preventiva a casa 100 mil KM, ou toda vez que realizar a retificar completa do motor." xml:space="preserve">
+    <value>Se recomienda cambiar el Kit de Distribución de forma preventiva a unos de 100 mil KM, o cada vez que se realice la rectifica completa del do motor.</value>
+  </data>
+  <data name="Regulam a pressão e vazão do fluido no sistema de lubrificação." xml:space="preserve">
+    <value>Regulan la presión y caudal del líquido en el sistema de lubricación.</value>
+  </data>
+  <data name="REPAROS DE BOMBA" xml:space="preserve">
+    <value>PIEZAS DE
+REPARACIÓN DE BOMBA</value>
+  </data>
+  <data name="Responsáveis pela circulação do fluido lubrificante pelo motor. Ao circular entre as partes móveis do motor, o fluido lubrificante reduz o atrito, minimizando a geração de calor e removendo as impurezas geradas durante o funcionamento do motor." xml:space="preserve">
+    <value>Responsables de la circulación del líquido lubricante por el motor. Al circular entre las partes móviles del motor, el líquido lubricante reduce la fricción, minimizando la generación de calor y retirando las impurezas generadas durante el funcionamiento del motor.</value>
+  </data>
+  <data name="Responsáveis pela circulação do fluido refrigerante nas galerias do motor. Ao percorrer as galerias, o fluido refrigerante remove o calor e o transporta até o radiador, onde é refrigerado para poder retornar ao sistema novamente." xml:space="preserve">
+    <value>Responsables de la circulación del líquido refrigerante en las tuberías del motor. Al recorrer las tuberías, el líquido refrigerante retira el calor y lo transporta hasta el radiador, donde es refrigerado para que pueda retornar al sistema nuevamente.</value>
+  </data>
+  <data name="Rolamento resistente de alta qualidade." xml:space="preserve">
+    <value>Rodamiento resistente de alta calidad.</value>
+  </data>
+  <data name="Selo de alta capacidade de vedação." xml:space="preserve">
+    <value>Alta capacidad de sellado.</value>
+  </data>
+  <data name="Só tire a bomba da embalagem na hora que você for instalá-la, assim evita a entrada de algum tipo de sujeira no seu interior." xml:space="preserve">
+    <value>Sólo saque la bomba del embalaje en el momento de instalarla, así se evita la entrada de algún tipo de suciedad en su interior.</value>
+  </data>
+  <data name="Também chamadas de bomba de baixa, têm a finalidade de impulsionar o combustível até a bomba de alta ou diretamente nas unidades de injeção de combustível." xml:space="preserve">
+    <value>También llamadas de bomba de baja, tienen la finalidad de impulsar el combustible hasta la bomba de alta o directamente en las unidades de inyección de combustible</value>
+  </data>
+  <data name="Tecnologia avançada" xml:space="preserve">
+    <value>Tecnología avanzada</value>
+  </data>
+  <data name="TENSIONADORES" xml:space="preserve">
+    <value>TENSORES</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>PRODUCTOS</value>
+  </data>
+  <data name="Toda aplicação, instalação, manuseio ou manutenção, deve ser realizada por pessoas habilitadas e com o auxílio de equipamentos apropriados para a instalação ou manutenção dos componentes." xml:space="preserve">
+    <value>Toda aplicación, instalación, manoseo o manutención, debe ser realizada por personas calificadas y con ayuda de equipos apropiados para la instalación o mantenimiento de los componentes.</value>
+  </data>
+  <data name="Troque o tubo de sucção sempre que substituir a bomba de óleo." xml:space="preserve">
+    <value>Cambie el tubo de succión todas las veces que reemplace la bomba de aceite.</value>
+  </data>
+  <data name="TUBOS DE SUCÇÃO" xml:space="preserve">
+    <value>TUBOS DE SUCCIÓN</value>
+  </data>
+  <data name="VÁLVULAS DE ALÍVIO" xml:space="preserve">
+    <value>VÁLVULAS DE ALIVIO</value>
+  </data>
+</root>

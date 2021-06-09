@@ -1,0 +1,30 @@
+.container-fluid.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vw;
+    width: 100%;
+}
+
+.container-fluid .row {
+    min-height: 30vw;
+}
+
+.super-title {
+    font-family: 'Gotham-Book';
+    font-size: 1.6em;
+}
+
+.master-title {
+    font-family: 'Gotham-Light';
+    font-size: 4.1em;
+}
+
+.title {
+    font-family: 'Gotham-Bold';
+    font-size: 1.6em;
+}
+
+.description {
+    font-family: 'Gotham-Book';
+    font-size: .9em;
+}

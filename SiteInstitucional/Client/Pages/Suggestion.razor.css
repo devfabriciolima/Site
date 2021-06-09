@@ -1,0 +1,10 @@
+﻿.title {
+    font-family: 'Gotham-Black';
+}
+
+.form-group label {
+    /*color: white;*/
+    margin: 0;
+    font-family: 'Gotham-Book';
+    font-size: .9em;
+}

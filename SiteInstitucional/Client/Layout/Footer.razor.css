@@ -1,0 +1,38 @@
+﻿.card {
+    background: none;
+    border: none;
+}
+
+.menu-item ::deep a {
+    color: white;
+    font-family: "Gotham-Black";
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+    .menu-item ::deep a:hover, ::deep a.menu-subitem:hover {
+        color: #DB8E18;
+        text-decoration: none;
+    }
+
+.menu-subitem, ::deep a.menu-subitem, .copyright {
+    color: white;
+    font-size: 0.7rem;
+    font-family: "Gotham-Book";
+    font-style: normal;
+    font-weight: 400;
+}
+
+img.logomarca {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+    ul > li {
+        line-height: 1rem;
+    }

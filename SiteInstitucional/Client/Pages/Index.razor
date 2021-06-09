@@ -1,0 +1,218 @@
+﻿@page "/"
+@page "/mobile"
+@page "/ecat_app"
+@page "/ecat_app/Default.aspx"
+
+@using SiteInstitucional.Client.ViewModels
+@using SiteInstitucional.Client.Pages.Catalog
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<Index> Localizer
+
+@code {
+    [Parameter]
+    public string Param { get; set; }
+
+    public IndexButtonItem[] ButtonItems { get; } = IndexButtonItem.GetItems();
+
+
+}
+
+<div id="carouselBanner" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators mb-0">
+        <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselBanner" data-slide-to="1"></li>
+        <li data-target="#carouselBanner" data-slide-to="2"></li>
+        <li data-target="#carouselBanner" data-slide-to="3"></li>
+        <li data-target="#carouselBanner" data-slide-to="4"></li>
+        <li data-target="#carouselBanner" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/img/carousel/@Localizer["Lançamento_-_B.A_-_Atualização__-_PT.png"]" class="d-block w-100 mt-lg-5" />
+        </div>
+        <div class="carousel-item">
+            <img src="/img/carousel/@Localizer["B.C_-_Mod_4_-_BNN_-_PT.png"]" class="d-block w-100 mt-lg-5" />
+        </div>
+        <div class="carousel-item">
+            <img src="/img/carousel/@Localizer["B.O_-_Mod_2_-_BNN_-_PT.png"]" class="d-block w-100 mt-lg-5" />
+        </div>
+        <div class="carousel-item">
+            <img src="/img/carousel/@Localizer["Certificado.png"]" class="d-block w-100 mt-lg-5" />
+        </div>
+        <div class="carousel-item">
+            <img src="/img/carousel/@Localizer["KIT-DE-DISTRIBUIÇÃO.JPG"]" class="d-block w-100 mt-lg-5" />
+        </div>
+        <div class="carousel-item">
+            <img src="/img/carousel/@Localizer["POLIAS-E-TENSIONADORES.JPG"]" class="d-block w-100 mt-lg-5" />
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">@Localizer["Anterior"]</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">@Localizer["Próximo"]</span>
+    </a>
+</div>
+
+<CatalogSearch />
+
+<div class="container-fluid cor-fundo-cinza-escuro d-none d-md-block py-4">
+    <div class="container">
+        <div class="card-deck">
+            @foreach (var button in ButtonItems)
+            {
+                <div class="card">
+                    <figure class="cor-fundo-cinza-escuro m-0">
+                        <NavLink href="@button.Link">
+                            <img src="img/index/@button.Image" />
+                            <figcaption>
+                                <h2 class="m-0">@Localizer[button.Title]</h2>
+                                <p class="m-0">@Localizer[button.Description]</p>
+                            </figcaption>
+                        </NavLink>
+                    </figure>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid cor-fundo-preto">
+    <div class="row pt-3">
+        <div class="container">
+            <div class="row" id="qualidadeSchadek">
+                <div class="col-lg-5 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-end">
+                    <div class="content-quality">
+                        <h1 class="title-index text-uppercase">
+                            <span class="cor-amarelo">@Localizer["QUALIDADE"]</span><br /><span class="cor-branco">Schadek</span>
+                        </h1>
+                        <p class="content-index cor-branco">
+                            @Localizer["Com mais de 55 anos de atuação no ramo automotivo, a Schadek Automotive é a empresa líder de mercado quando o assunto é Bombas Automotivas.São anos de investimentos contínuos em tecnologias, inovações, equipamentos e colaboradores para atender o mercado com o nível de excelência."]
+                        </p>
+                        <p class="content-index cor-amarelo">
+                            @Localizer["É assim que a Schadek assegura que os padrões de qualidade definidos no início do processo de desenvolvimento sejam aplicados com rigor."]
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <picture>
+                        <source class="img-fluid " media="(min-width:1200px )" srcset="img/index/qualidade/qualidade.jpg" sizes="100vw">
+                        <source class="img-fluid " media="(min-width:900px )" srcset="img/index/qualidade/qualidadeTablet.png" sizes="100vw">
+                        <source class="img-fluid " media="(min-width:300px )" srcset="img/index/qualidade/qualidadeMobile.png" sizes="100vw">
+                        <img class="img-fluid" src="img/index/qualidade/qualidade.jpg" alt="Qualidade">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pt-2">
+        <div class="container" id="releases">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <h1 class="title-index text-uppercase cor-branco">@Localizer["Lançamentos"]</h1>
+                    <picture>
+                        <source class="img-fluid " media="(min-width:1200px )" srcset="@Localizer["img/index/lancamentos/lancamentosSitePT.png"]" sizes="100vw">
+                        <source class="img-fluid " media="(min-width:900px )" srcset="@Localizer["img/index/lancamentos/lancamentosTabletPT.png"]" sizes="100vw">
+                        <source class="img-fluid " media="(min-width:300px )" srcset="@Localizer["img/index/lancamentos/lancamentosMobilePT.png"]" sizes="100vw">
+                        <img class="img-fluid" src="@Localizer["img/index/lancamentos/lancamentosSitePT.png"]" alt="Lançamentos">
+                    </picture>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-start">
+                    <div id="content-lancamento">
+                        @*<h1 class="title-index text-uppercase">
+                            </h1>*@
+                        <p class="cor-branco content-index">
+                            <h1 class="sub-title-release "><span class="cor-amarelo text-uppercase title-index">@Localizer["A Schadek"]</span> <br /><span class="text-uppercase title-index">Automotive </span></h1>
+                            @Localizer["se tornou referência quando o assunto são Bombas Automotivas. Por isso está sempre investindo em novos produtos e tecnologias para o mercado. No ano de 2020, mesmo com muitos desafios encontrados em diversas questões, a empresa continuou inovando e trouxe mais de 50 novos produtos para o mercado de reposição. Entre Bombas de Óleo, Bombas D´água e Bombas de Combustível.Garantindo a sua posição de líder no mercado nacional de reposição automotiva, contando com o maior portfólio do mercado."]
+                        </p>
+                        <h6 class="cor-branco menu-item">
+                            <a href="arquivos/UltimosLancamentos.pdf" download="UltimosLancamentos.pdf">
+                                @Localizer["Clique aqui e veja as aplicações completas!"]
+                                <span class="border-link"></span>
+                            </a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <div class="container">
+            <div class="row " id="row-polias">
+                <div class="col-lg-5 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-end">
+                    <div id="content-polias">
+                        <h1 class="title-index text-uppercase">
+                            <span class="cor-amarelo">@Localizer["Polias e"]</span> <br />
+                            <span class="cor-branco">@Localizer["Tensionadores"]</span>
+                        </h1>
+
+                        <p class="cor-branco content-index">
+                            @Localizer["Evoluindo e buscando sempre aprimorar a sua linha de produtos a Schadek incorporou no seu portfólio mais uma linha: Polias e Tensionadores.Neste lançamento são mais de 300 parts numbers, com tecnologia, alto desempenho e a qualidade e confiança da Schadek que você já conhece e confía."]
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <picture>
+                        <source class="img-fluid " media="(min-width:1200px )" srcset="@Localizer["img/index/polias/poliasTensionadoresSitePT.png"]" sizes="100vw">
+                        <source class="img-fluid " media="(min-width:900px )" srcset="@Localizer["img/index/polias/poliasTensionadoresTabletPT.png"]" sizes="100vw">
+                        <source class="img-fluid " media="(min-width:300px )" srcset="@Localizer["img/index/polias/poliasTensionadoresMobilePT.png"]" sizes="100vw">
+                        <img class="img-fluid" src="@Localizer["img/index/polias/poliasTensionadoresSitePT.png"]" alt="Polias e Tensionadores">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="row-kits" class="row">
+        <div class="container" id="container-kits">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12" id="col-kits">
+                    <div id="content-kits">
+                        <h1 class="title-index text-uppercase">
+                            <span class="cor-branco title-stroke">@Localizer["Kits de"]</span> <br />
+                            <span class="cor-preto">@Localizer["Distribuição"]</span>
+                        </h1>
+                        <p class="cor-preto content-index">
+                            @Localizer["Pensando sempre em inovação, a Schadek Automotive se reinventou mais uma vez e trouxe para o mercado mais um lançamento: Kits de Distribuição com corrente! Os Kits de Distrbuição da Schadek Automotive possuem diversas composições, podendo ser Simples, Parciais ou Completos. Cada um, com componentes específicos como: Correntes, engrenagens, tensores, alavancas, guias, retentores e etc.  Os componentes do Kit de Distribuição Schadek possuem a garantia e qualidade dos produtos da Schadek Automotive."]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row pt-2">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-start">
+                    <picture>
+                        <source class="img-fluid " media="(min-width:1200px )" srcset="img/index/certificado/cetificado.jpg" sizes="100vw">
+                        <source class="img-fluid " media="(min-width:900px )" srcset="img/index/certificado/certificadoTablet.png" sizes="100vw">
+                        <source class="img-fluid " media="(min-width:300px )" srcset="img/index/certificado/certificadoMobile.png" sizes="100vw">
+                        <img class="img-fluid" src="img/index/certificado/cetificado.jpg" alt="Certificado">
+                    </picture>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+                    <h1 class="title-index">
+                        <span class="cor-amarelo">IATF</span>
+                        <span class="cor-branco">16949</span>
+                    </h1>
+                    <p class="content-index cor-branco">
+                        @Localizer["O comprometimento com a alta qualidade e a tecnologia promoveram a Schadek Automotive mais um certificado de grande prestígio para as indústrias do setor automotivo.A certificação IATF 16949 é oferecida apenas para os"]
+                        <h1 class="sub-title-release cor-amarelo title-index"><span class="text-uppercase "><nobr> @Localizer["gigantes do setor automotivo"]</nobr></span></h1>
+                        @Localizer["e assegura a qualidade superior dos produtos.Com essa certificação a Schadek está habilitada a atender não somente mais o mercado de reposição, como também diretamente as grandes montadoras e sistemistas.A experiência de mais de"]
+                        <h1 class="sub-title-release cor-amarelo title-index"> <span class="text-uppercase "><nobr> @Localizer["55 anos"]</nobr></span></h1>
+                        @Localizer["na produção de Bombas Automotivas, que mantiveram a empresa como líder no mercado de reposição e os altos parâmetros de precisão presentes em todas as fases do processo produtivo, garantiram que a Schadek cumprisse todas as exigências feitas pelos órgãos responsáveis com máxima eficiência."]
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+﻿@page "/Downloads"
+@using SiteInstitucional.Client.ViewModels
+@using Microsoft.Extensions.Localization
+
+
+@inject IStringLocalizer<Downloads> Localizer
+
+@code {
+
+    private DownloadItem[] AllDownloadItems { get; } = DownloadItem.GetItems();
+
+    public DownloadItem[] FilteredDownloadItems { get; private set; }
+
+    protected override void OnInitialized()
+    {
+        FilteredDownloadItems = AllDownloadItems;
+    }
+
+    private Task OnChangeItem(ChangeEventArgs e)
+    {
+        var isValid = Guid.TryParse(e.Value?.ToString(), out var selected);
+        FilteredDownloadItems = isValid && selected != Guid.Empty
+            ? AllDownloadItems.Where(i => i.Id == selected).ToArray()
+            : AllDownloadItems;
+        return Task.CompletedTask;
+    }
+}
+
+<PageHeader PageType="@typeof(Downloads)" ImageName="downloads.jpg" />
+
+<div class="container-fluid cor-fundo-cinza-clarissimo">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <h2 class="title cor-laranja">@Localizer["DOWNLOADS"]</h2>
+                <p class="description">
+                    @Localizer["A Schadek está sempre desenvolvendo materiais informativos para facilitar e garantir a correta instalação dos seus produtos."]
+                </p>
+                <div class="select">
+                    <select class="custom-select mb-4" @onchange="OnChangeItem">
+                        <option value="@Guid.Empty">@Localizer["Todos os assuntos"]</option>
+                        @foreach (var group in AllDownloadItems.GroupBy(i => i.Type))
+                        {
+                            <optgroup label="@Localizer[group.Key]">
+                                @foreach (var item in group)
+                                {
+                                    <option value="@item.Id">@Localizer[item.Name]</option>
+                                }
+                            </optgroup>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    @foreach (var item in FilteredDownloadItems)
+                    {
+                        <article class="py-3">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="/img/downloads/@item.Thumbnail" class="w-100 h-auto w-md-auto h-md-100" />
+                                </div>
+                                <div class="col-7">
+                                    <h3 class="title text-uppercase mt-4 mb-0">@Localizer[@item.Type]</h3>
+                                    <h4 class="sub-title">@Localizer[@item.Name]</h4>
+                                </div>
+                                <div class="col-2">
+                                    <a class="btn mt-4 p-0" href="/api/static/downloads/file/@item.Filename" target="_blank">
+                                        <i class="fas fa-file-pdf fa-3x text-danger"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    }
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

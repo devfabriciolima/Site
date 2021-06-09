@@ -1,0 +1,28 @@
+﻿.container-fluid.header {
+    background-image: url(/img/warranty/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Gotham-Bold';
+    font-size: 1.6em;
+}
+
+.sub-title {
+    font-family: 'Gotham-Black';
+    font-size: 1.6em;
+}
+
+.description {
+    font-family: 'Gotham-Book';
+    font-size: .8em;
+}
+
+    .description.contrast, .description ::deep .contrast {
+        font-family: 'Gotham-Black';
+    }
+
+::deep ul {
+    padding-inline-start: 1rem;
+}

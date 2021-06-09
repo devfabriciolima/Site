@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1 MILHÃO PEÇAS/MÊS" xml:space="preserve">
+    <value>1 MILLION PARTS/MONTHS</value>
+  </data>
+  <data name="1.000" xml:space="preserve">
+    <value>1,000</value>
+  </data>
+  <data name="100% de captação" xml:space="preserve">
+    <value>100% of internal</value>
+  </data>
+  <data name="116 mil m2" xml:space="preserve">
+    <value>116.000 sqm</value>
+  </data>
+  <data name="46.000 M2" xml:space="preserve">
+    <value>46,000 SQM</value>
+  </data>
+  <data name="A excelência da gestão, dos produtos e dos processos Schadek receberam as principais certificações do mercado: ISO 9001 e IATF 16949" xml:space="preserve">
+    <value>Excellence in Schadek's management, products, and processes obtained the most prestigious certifications in the market: ISO 9001 e IATF 16949</value>
+  </data>
+  <data name="A gestão ambiental Schadek controla todos os processos industriais com o objetivo de atender e superar os requisitos de segurança exigidos pelos órgãos fiscalizadores. Desde os cuidados para evitar a contaminação do solo até o correto descarte de resíduos do processo fabril." xml:space="preserve">
+    <value>Schadek's environmental management controls all industrial processes with the objective of meeting and exceeding the security requirements demanded by the inspection agencies. From care to avoid soil contamination to the correct disposal of waste generated by the manufacturing process.</value>
+  </data>
+  <data name="A Schadek acredita ser sua responsabilidade contribuir para o desenvolvimento das comunidades onde seus funcionários trabalham e vivem. Por isso, apoia iniciativas que promovem a cultura, a educação e a inclusão social, como as Oficinas de Práticas Orquestrais do &lt;b&gt;Instituto de Educação Musical SONORUM&lt;/b&gt; e as atividades educacionais da &lt;b&gt;Associação Monte Carmelo&lt;/b&gt;." xml:space="preserve">
+    <value>Schadek believes its has a responsibility to contribute to the development of the communities in which its employees work and live. To this end, it supports initiatives that promote culture, education and social inclusion, such as the Workshops of Orchestral Practices of the &lt;b&gt;Institute of Musical Education SONORUM&lt;/b&gt; and the educational activities of the &lt;b&gt;Monte Carmelo Association&lt;/b&gt;.</value>
+  </data>
+  <data name="A Schadek capta, trata e reutiliza os 720 mil litros de água consumidos mensalmente na sua moderna Estação de Tratamento de Efluente Industrial e Tratamento de Esgoto." xml:space="preserve">
+    <value>Schadek collects, treats and reuses the 720.000 liters of water consumed monthly in its modern Industrial Effluent Treatment and Sewage Treatment Station.</value>
+  </data>
+  <data name="A Schadek destinou uma área 60% maior do que sua unidade fabril para a preservação ambiental. Em 2005 criou a Área Elizabeth Charlote Magalhães com mais de 116 mil m2 de rica biodiversidade, com nascente preservada, lago para criação de peixes, apiário, árvores frutíferas e mudas de árvores nativas, muitas delas plantadas pela própria Schadek, que mantém a área desde a sua criação." xml:space="preserve">
+    <value>Schadek allocated an area 60% larger than its manufacturing plant for environmental preservation. In 2005, it created the Elizabeth Charlote Magalhães Area, which has over 116.000 sqm of rich biodiversity, with a preserved spring, a pond for fish farming, apiary, fruit trees and native tree seedlings, many of them planted by Schadek itself, which has maintained the area since its creation.</value>
+  </data>
+  <data name="A SCHADEK GANHA MAIS UM CERTIFICADO!" xml:space="preserve">
+    <value>SCHADEK WINS ANOTHER CERTIFICATE!</value>
+  </data>
+  <data name="ampliação da fábrica" xml:space="preserve">
+    <value>expanding the factory</value>
+  </data>
+  <data name="CERCA DE" xml:space="preserve">
+    <value>NEARLY</value>
+  </data>
+  <data name="CERTIFICADOS" xml:space="preserve">
+    <value>CERTIFICATES</value>
+  </data>
+  <data name="COLABORADORES" xml:space="preserve">
+    <value>EMPLOYEES</value>
+  </data>
+  <data name="Desde então, excelência operacional, processos produtivos avançados e reengenharia em estado da arte construíram a história de sucesso da marca referência de qualidade em bombas automotivas." xml:space="preserve">
+    <value>Since then, operational excellence, advanced production processes and state-of-the-art reengineering created the success story of the brand, which is a quality benchmark in automotive pumps.</value>
+  </data>
+  <data name="Em mais uma ação de RESPONSABILIDADE SOCIOAMBIENTAL, no ano 2020 nós reduzimos 498,21 Toneladas de CO2, o que corresponde ao plantio de 3.487 árvores em um projeto de reflorestamento de 30 anos." xml:space="preserve">
+    <value>In yet another SOCIO-ENVIRONMENTAL RESPONSIBILITY action, in 2020 we reduced 498.21 tons of CO2, which corresponds to the planting of 3,487 trees in a 30-year reforestation project.</value>
+  </data>
+  <data name="Excelência" xml:space="preserve">
+    <value>Excellence</value>
+  </data>
+  <data name="Exporta para" xml:space="preserve">
+    <value>Exports to</value>
+  </data>
+  <data name="Fundação" xml:space="preserve">
+    <value>Foundation</value>
+  </data>
+  <data name="FÁBRICA" xml:space="preserve">
+    <value>PLANT</value>
+  </data>
+  <data name="Gestão da Informação" xml:space="preserve">
+    <value>Information Management</value>
+  </data>
+  <data name="Gestão da água" xml:space="preserve">
+    <value>Water management</value>
+  </data>
+  <data name="HOJE" xml:space="preserve">
+    <value>TODAY</value>
+  </data>
+  <data name="Inauguração da fábrica em Porto Feliz (SP)" xml:space="preserve">
+    <value>Inauguration of the plant in Porto Feliz (SP)</value>
+  </data>
+  <data name="Instalações industriais" xml:space="preserve">
+    <value>Industrial facilities</value>
+  </data>
+  <data name="interna, tratamento e reúso" xml:space="preserve">
+    <value>collection, treatment and reuse</value>
+  </data>
+  <data name="Investimentos constantes na" xml:space="preserve">
+    <value>Constant investments in</value>
+  </data>
+  <data name="Início da fabricação de bombas de combustível" xml:space="preserve">
+    <value>Beginning of production of fuel pumps</value>
+  </data>
+  <data name="Início da fabricação de bombas de óleo" xml:space="preserve">
+    <value>Beginning of production of oil pumps</value>
+  </data>
+  <data name="Início da fabricação de bombas d’água" xml:space="preserve">
+    <value>Beginning of production of water pumps</value>
+  </data>
+  <data name="Início das exportações para Estados Unidos e México" xml:space="preserve">
+    <value>Beginning of exports to the United States and Mexico</value>
+  </data>
+  <data name="Isso porque a Schadek adquire energia de fontes renováveis por meio do mercado livre de energia. Quem consome energia de fontes limpas, como eólica, solar fotovoltaica, biomassa, ou, ainda, proveniente de Pequenas Centrais Hidrelétricas (PCHs), colabora para reduzir as emissões de gases poluentes na atmosfera." xml:space="preserve">
+    <value>This is because Schadek purchases energy from renewable sources through the free energy market. Whoever consumes energy from clean sources, such as wind, solar photovoltaic, biomass, or even from Small Hydroelectric Power Plants (SHPs), collaborates to reduce emissions of polluting gases into the atmosphere.</value>
+  </data>
+  <data name="ITENS" xml:space="preserve">
+    <value>ITEMS</value>
+  </data>
+  <data name="LINHA DO TEMPO" xml:space="preserve">
+    <value>TIMELINE</value>
+  </data>
+  <data name="Líder em bombas de óleo no mercado nacional, as soluções Schadek alcançam mais de 30 países, atendendo às diferentes necessidades dos clientes com qualidade, confiança e competitividade." xml:space="preserve">
+    <value>Leader in oil pumps in the domestic market, Schadek's solutions reach more than 30 countries, catering to the various needs of customers with quality, reliability, and competitiveness.</value>
+  </data>
+  <data name="Maior portfólio do mercado" xml:space="preserve">
+    <value>Largest portfolio in the market</value>
+  </data>
+  <data name="MAIS DE" xml:space="preserve">
+    <value>OVER</value>
+  </data>
+  <data name="MEIO AMBIENTE" xml:space="preserve">
+    <value>ENVIRONMENT</value>
+  </data>
+  <data name="MONTADORAS E SISTEMISTAS" xml:space="preserve">
+    <value>OEMs AND TIER SUPPLIERS</value>
+  </data>
+  <data name="PAÍSES" xml:space="preserve">
+    <value>COUNTRIES</value>
+  </data>
+  <data name="Presença em" xml:space="preserve">
+    <value>Presence in</value>
+  </data>
+  <data name="Preservação ambiental" xml:space="preserve">
+    <value>Environmental preservation</value>
+  </data>
+  <data name="PROJETOS SOCIAIS" xml:space="preserve">
+    <value>SOCIAL PROJECTS</value>
+  </data>
+  <data name="RESPONSABILIDADE SOCIOAMBIENTAL" xml:space="preserve">
+    <value>SOCIAL AND ENVIRONMENTAL RESPONSIBILITY</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="TRAJETÓRIA" xml:space="preserve">
+    <value>JOURNEY</value>
+  </data>
+  <data name="Tudo começou em 1965, com a produção de peças fundidas sob pressão para motocicletas, automóveis e aparelhos de uso doméstico. Três anos mais tarde, o início da produção de bombas de óleo marcou a entrada definitiva da Schadek no mercado de reposição automotiva." xml:space="preserve">
+    <value>Everything started in 1965, with the production of pressure-cast parts for motorcycles, automobiles, and home appliances.
+Three years later, the beginning of oil pump production marked Schadek's definitive entrance in the automotive aftermarket.</value>
+  </data>
+  <data name="Volume de produção" xml:space="preserve">
+    <value>Production volume</value>
+  </data>
+</root>

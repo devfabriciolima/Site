@@ -1,0 +1,28 @@
+﻿:root {
+    --nav-header-height: 100px;
+    --nav-menu-height: 40px;
+    --header-height: calc(var(--nav-header-height) + var(--nav-menu-height));
+}
+
+div#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    /*height: var(--header-height);*/
+}
+
+main {
+    padding-top: var(--nav-header-height);
+}
+
+footer {
+    margin-top: auto;
+}

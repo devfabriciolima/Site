@@ -1,0 +1,126 @@
+﻿@page "/Ideias"
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Suggestion> Localizer
+
+<div class="container-fluid pt-5">
+    <div class="row">
+        <div class="offset-2 col-8 text-center">
+            <h1 class="title">SUGESTÃO DE IDEIAS</h1>
+        </div>
+        <div class="col-2">
+            <img src="img/schadek-lean.png" class="w-100" alt="Schadek, O Jeito Lean de Ser" />
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-12">
+            <Loading IsLoading="_sendingMessage">
+                <EditForm Model="@_model" OnValidSubmit="@SendMail" class="w-100">
+                    <DataAnnotationsValidator />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="department">@Localizer["Setor de Aplicação de Melhoria"]</label>
+                                    <InputSelect @bind-Value="_model.Department" class="custom-select" id="department" required>
+                                        <option value="">@Localizer["Selecione..."]</option>
+                                        @foreach (var sector in _listDepartments.Select(d => d.Name).OrderBy(d => d).Distinct())
+                                        {
+                                            <option value="@sector">@sector</option>
+                                        }
+                                    </InputSelect>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="collaboratorRegistration">@Localizer["Matrícula do Colaborador"]</label>
+                                    <InputText @bind-Value="_model.CollaboratorRegistration"
+                                               class="form-control form-control-sm"
+                                               id="collaboratorRegistration"
+                                               DisplayName="@Localizer["Matrícula do Colaborador"]"
+                                               maxlength="50"
+                                               required />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="collaboratorName">@Localizer["Nome do Colaborador"]</label>
+                                    <InputText @bind-Value="_model.CollaboratorName"
+                                               class="form-control form-control-sm"
+                                               id="collaboratorName"
+                                               DisplayName="@Localizer["Nome do Colaborador"]"
+                                               maxlength="400"
+                                               required />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="collaboratorDepartment">@Localizer["Setor do Colaborador"]</label>
+                                    <InputSelect @bind-Value="_model.CollaboratorDepartment" class="custom-select" id="collaboratorDepartment" required>
+                                        <option value="">@Localizer["Selecione..."]</option>
+                                        @foreach (var sector in _listDepartments.Select(d => d.Name).OrderBy(d => d).Distinct())
+                                        {
+                                            <option value="@sector">@sector</option>
+                                        }
+                                    </InputSelect>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="attachments">@Localizer["Arquivo(s) Sugestão"]</label>
+                                    <InputFile OnChange="@LoadFiles" class="form-control-file" id="attachments" multiple /><Loading IsLoading="_sendingFile" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="idea">@Localizer["Qual é minha ideia?"]</label>
+                                    <InputTextArea @bind-Value="_model.MyIdea"
+                                                   DisplayName="@Localizer["Qual é minha ideia?"]"
+                                                   required="@(_model.Attachments.Count == 0)"
+                                                   class="form-control form-control-sm"
+                                                   id="idea"
+                                                   rows="4" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="why">@Localizer["Por que minha ideia é aplicável?"]</label>
+                                    <InputTextArea @bind-Value="_model.WhyApplicable"
+                                                   DisplayName="@Localizer["Por que minha ideia é aplicável?"]"
+                                                   required="@(_model.Attachments.Count == 0)"
+                                                   class="form-control form-control-sm"
+                                                   id="why"
+                                                   rows="4" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="measure">@Localizer["Como minha ideia pode ser medida após ser aplicada?"]</label>
+                                    <InputTextArea @bind-Value="_model.HowMeasured"
+                                                   DisplayName="@Localizer["Como minha ideia pode ser medida após ser aplicada?"]"
+                                                   required="@(_model.Attachments.Count == 0)"
+                                                   class="form-control form-control-sm"
+                                                   id="measure"
+                                                   rows="4" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-schadek btn-block text-uppercase">
+                                @Localizer["Enviar"]
+                            </button>
+                        </div>
+                    </div>
+                </EditForm>
+            </Loading>
+        </div>
+    </div>
+</div>
+
+<MessageModal @ref="_messageModal" />

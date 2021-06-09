@@ -1,0 +1,111 @@
+﻿@page "/Warranty"
+@page "/mobile/QR/Garantia"
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<Warranty> Localizer
+
+<PageHeader PageType="@typeof(Warranty)" ImageName="warranty.jpg" />
+
+<div class="container-fluid header">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12 col-md-6">
+                <h3 class="title text-uppercase">@Localizer["Garantia"]</h3>
+                <p class="description">
+                    @Localizer["Garantimos nossos produtos como livres de defeitos de materiais e fabricação durante o prazo de 90 (noventa) dias por força de lei, acrescido de 90 (noventa) dias adicionais concedidos pela Schadek, perfazendo um total de 180 (cento e oitenta) dias ou 10 mil Km, prevalecendo o que ocorrer primeiro. O prazo de garantia começa a contar a partir da data da emissão Nota Fiscal de venda ao consumidor final. As solicitações de garantia serão atendidas após análise detalhada da peça, realização de testes e emissão de laudo técnico. Verifique atentamente as instruções de instalação e condições de garantia para cada produto Schadek."]
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-7 pl-0 pr-1">
+                        <img src="img/warranty/warranty01.jpg" class="w-100" />
+                    </div>
+                    <div class="col-5 pl-1 pr-0">
+                        <img src="img/warranty/warranty02.jpg" class="w-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12">
+                <h3 class="title text-uppercase cor-laranja">@Localizer["BOMBAS D’ÁGUA"]</h3>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="img/products/waterpump.png" class="w-100" />
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="accordion mt-5" id="waterpump-accordion">
+                    <CollapseCard Id="waterpump-recommendation" HeaderTitle="@Localizer["Recomendações"]">
+                        <div class="description">
+                            @((MarkupString) Localizer["waterpump-recommendation"].Value)
+                        </div>
+                    </CollapseCard>
+                    <CollapseCard Id="waterpump-warrantycertificate" HeaderTitle="@Localizer["Certificado de Garantia"]">
+                        <div class="description">
+                            @((MarkupString) Localizer["waterpump-warrantycertificate"].Value)
+                        </div>
+                    </CollapseCard>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid cor-fundo-cinza-clarissimo">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12">
+                <h3 class="title text-uppercase cor-laranja">@Localizer["BOMBAS DE ÓLEO"]</h3>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="img/products/oilpump.png" class="w-100" />
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="accordion mt-5" id="oilpump-accordion">
+                    <CollapseCard Id="oilpump-recommendation" HeaderTitle="@Localizer["Recomendações"]">
+                        <div class="description">
+                            @((MarkupString) Localizer["oilpump-recommendation"].Value)
+                        </div>
+                    </CollapseCard>
+                    <CollapseCard Id="oilpump-warrantycertificate" HeaderTitle="@Localizer["Certificado de Garantia"]">
+                        <div class="description">
+                            @((MarkupString) Localizer["oilpump-warrantycertificate"].Value)
+                        </div>
+                    </CollapseCard>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12">
+                <h3 class="title text-uppercase cor-laranja">@Localizer["BOMBAS DE COMBUSTÍVEL"]</h3>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="img/products/fuelpump.png" class="w-100" />
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="accordion mt-5" id="fuelpump-accordion">
+                    <CollapseCard Id="fuelpump-recommendation" HeaderTitle="@Localizer["Recomendações"]">
+                        <div class="description">
+                            @((MarkupString) Localizer["fuelpump-recommendation"].Value)
+                        </div>
+                    </CollapseCard>
+                    <CollapseCard Id="fuelpump-warrantycertificate" HeaderTitle="@Localizer["Certificado de Garantia"]">
+                        <div class="description">
+                            @((MarkupString) Localizer["fuelpump-warrantycertificate"].Value)
+                        </div>
+                    </CollapseCard>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,441 @@
+
+div.carousel {
+    width: 100%;
+    background-color: rgba(47,42,49,1.00);
+}
+
+    div.carousel .carousel-item > img {
+        display: block;
+        position: relative;
+        object-fit: cover;
+    }
+
+
+    div.carousel .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+
+        div.carousel .carousel-indicators li.active {
+            background-color: #DB8E18;
+        }
+
+
+
+@media (max-width: 767px) {
+
+
+    .carousel-inner {
+        font-size: .5em !important;
+    }
+
+    .carousel-caption {
+        padding: 0 5px !important;
+        bottom: 20% !important;
+    }
+
+        .carousel-caption .title {
+            font-size: 1.3em;
+        }
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+    z-index: 11;
+}
+
+.carousel-caption {
+    left: 0;
+    right: 0;
+}
+
+    .carousel-caption .content {
+        background-color: rgba(0,0,0,0.65);
+    }
+
+.title {
+    font-family: 'Gotham-XLight';
+    font-size: 2.2em;
+}
+
+.description {
+    font-family: 'Gotham-Book';
+    font-size: .9em;
+}
+
+.link {
+    font-family: 'Gotham-Black';
+    font-size: 1.1em;
+}
+
+
+.card-deck .card {
+    border: 1px solid #DB8E18;
+    border-radius: 0;
+}
+
+.card figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0;
+    opacity: 0.2;
+    -webkit-transition: opacity;
+    transition: opacity;
+}
+
+.card figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+    .card figcaption > h2 {
+        padding-top: 33%;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+        font-family: "Gotham-Thin";
+        font-size: 1.9em;
+    }
+
+.card figure:hover figcaption > h2 {
+    padding-top: 20%;
+    opacity: 1;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+}
+
+.card figcaption > p {
+    padding: 0px 0.5vw;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+    font-family: "Gotham-Book";
+    font-size: 0.8em;
+}
+
+.card figure:hover figcaption > p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
+
+
+.row-index {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#qualidadeSchadek {
+    font-family: "Gotham-Black" !important;
+    text-align: end !important;
+    font-weight: 700;
+}
+
+#realeses {
+    font-family: "Gotham-Black" !important;
+    font-weight: 700;
+}
+
+.sub-title-release {
+    display: inline;
+    font-size: initial;
+}
+
+.title-index {
+    line-height: 1.1em;
+    font-family: "Gotham-Black" !important;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+.content-index {
+    font-family: "Gotham-Black" !important;
+    font-weight: 700;
+    font-size: .6em;
+}
+
+
+@media (min-width: 300px) {
+
+    .content-index {
+        font-size: .6em;
+    }
+}
+
+@media (min-width: 576px) {
+    .content-index {
+        font-size: .6em;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    #row-content-kits {
+        position: relative;
+        /*right: 7em;*/
+        /*bottom: -5em;*/
+    }
+}
+
+
+@media(min-width: 1200px) {
+
+    #row-content-kits {
+        position: relative;
+        right: -1em;
+        top: -1em;
+    }
+
+    #row-kits {
+        background-image: url(img/index/index04.jpg);
+        height: 34em;
+    }
+
+    .content-index {
+        font-size: .9em;
+    }
+
+    #qualidadeSchadek .img-fluid {
+        z-index: 1;
+        position: relative;
+        left: 12%;
+    }
+
+    #qualidadeSchadek .content-quality {
+        z-index: 2;
+        width: 33.6rem;
+        position: relative;
+        left: 30%;
+    }
+
+    #content-lancamento, #content-polias, #content-kits {
+        width: 33.6rem;
+        z-index: 2;
+    }
+
+    #row-polias {
+        position: relative;
+        right: -3em;
+    }
+}
+
+#content-polias {
+    text-align: right;
+}
+
+#row-kits {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media(min-width: 200px) and (orientation: portrait) {
+
+    #row-kits {
+        background-image: url(img/index/index04small.png);
+        height: 34em;
+        margin-top: 0px
+    }
+
+    #container-kits {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+    #col-kits {
+        position: relative;
+        transform: translate(0px, -56px);
+        padding: 1.5em;
+    }
+}
+
+@media(min-width: 500px) {
+
+    #container-kits > .row {
+        justify-content: center;
+    }
+
+    #col-kits {
+        width: 73vw;
+        position: relative;
+        transform: translate(9px, -56px);
+    }
+}
+
+@media (min-width: 576px) {
+    #row-kits {
+        background-image: url(img/index/index04medium.png);
+        background-size: cover;
+        height: 34em;
+        background-position: left top;
+        margin-top: -10px
+    }
+
+    #container-kits {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 700px) {
+    #row-kits {
+        background-image: url(img/index/index04medium.png);
+        background-size: cover;
+        height: 34em;
+        background-position: left top;
+        margin-top: -55px
+    }
+
+    #container-kits {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+        #container-kits > .row {
+            justify-content: flex-end;
+        }
+
+    #col-kits {
+        position: relative;
+        transform: none;
+    }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+    #row-kits {
+        background-image: url(img/index/index04medium.png);
+        background-size: cover;
+        height: 34em;
+        background-position: left top;
+        margin-top: -55px
+    }
+
+    #container-kits {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+    #col-kits {
+        position: relative;
+        transform: translate(13%, -35px);
+    }
+}
+
+@media (min-width: 992px) {
+    #container-kits {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+        #container-kits > .row {
+            justify-content: flex-end;
+        }
+
+    #col-kits {
+        position: relative;
+        transform: none;
+    }
+
+    #content-kits h1 {
+        position: relative;
+        left: -0.5em;
+    }
+}
+
+@media(min-width: 1200px) {
+    #row-kits {
+        background-image: url(img/index/index04.jpg);
+        background-size: cover;
+        height: 31em;
+        background-position: left top;
+        margin-top: -80px
+    }
+
+    #container-kits {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    #content-kits {
+        position: relative;
+        transform: translate(-3em);
+    }
+}
+
+@media (min-width: 1400px) {
+
+    #row-kits {
+        background-image: url(img/index/index04.jpg);
+        background-size: contain;
+        height: 33em;
+        background-position: center;
+        margin-top: -80px
+    }
+
+    #content-kits {
+        position: relative;
+        transform: translate(-2.5em);
+    }
+}
+
+.menu-item ::deep a {
+    color: white;
+    font-family: "Gotham-Black";
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+    .menu-item ::deep a:hover,
+    ::deep a.menu-subitem:hover {
+        color: #DB8E18;
+        text-decoration: none;
+    }
+
+.border-link {
+    display: block;
+    border-radius: 4px;
+    border: 0.4em solid white;
+    max-width: 22em;
+    background: white;
+    margin-top: 0.4em;
+}
+
+.menu-item ::deep a:hover > .border-link {
+    border-color: #DB8E18;
+    background: #DB8E18;
+}
+/*.border-link:hover {
+        border-color: #DB8E18;
+        background: #DB8E18;
+    }*/
+.title-stroke {
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.3px;
+}

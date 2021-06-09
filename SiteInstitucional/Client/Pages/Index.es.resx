@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A Schadek está modernizando sua linha de embalagens para oferecer ainda mais praticidade e segurança aos usuários. Com formatos padronizados e nova identidade visual, as novas embalagens ganharam selo de qualidade e etiqueta de identificação com as principais informações do produto." xml:space="preserve">
+    <value>Schadek está modernizando su línea de embalajes para ofrecer todavía más practicidad y seguridad a los usuarios. Con formatos estandarizados y nueva identidad visual, los nuevos embalajes ganaron sello de calidad y etiqueta de identificación con las principales informaciones del producto.</value>
+  </data>
+  <data name="A SCHADEK EVOLUI COM VOCÊ" xml:space="preserve">
+    <value>SCHADEK EVOLUCIONA CON USTED</value>
+  </data>
+  <data name="Agora você pode contar com a qualidade da marca líder em bombas de óleo também nos produtos da nova linha de bombas d’água e bombas de combustível. A Schadek desenvolveu soluções de ponta para garantir a você produtos de alto desempenho com preços mais competitivos." xml:space="preserve">
+    <value>Ahora usted puede contar con la calidad de la marca líder en bombas de aceite también en los productos de la nueva línea de bombas de agua y bombas de combustible. Schadek desarrolló soluciones de punta para garantizarle a usted productos más competitivos.</value>
+  </data>
+  <data name="AMPLIAMOS O PORTFÓLIO E AS VANTAGENS" xml:space="preserve">
+    <value>AMPLIAMOS EL PORTAFOLIO Y LAS VENTAJAS</value>
+  </data>
+  <data name="B.C_-_Mod_4_-_BNN_-_PT.png" xml:space="preserve">
+    <value>B.C_-_Mod_4_-_BNN_-_ES.png</value>
+  </data>
+  <data name="B.O_-_Mod_2_-_BNN_-_PT.png" xml:space="preserve">
+    <value>B.O_-_Mod_2_-_BNN_-_ES.png</value>
+  </data>
+  <data name="Baixe o app no seu celular. É rápido, fácil e grátis." xml:space="preserve">
+    <value>Descarga la aplicación en tu teléfono. Es rápido, fácil y gratuito.</value>
+  </data>
+  <data name="Certificado.png" xml:space="preserve">
+    <value>Certificado-ESP.JPG</value>
+  </data>
+  <data name="CONFIRA AS ÚLTIMAS NOVIDADES DA MARCA Nº 1 NA PREFERÊNCIA EM BOMBAS AUTOMOTIVAS" xml:space="preserve">
+    <value>CONOZCA LAS ÚLTIMAS NOVEDADES DE LA MARCA N.º 1 EN BOMBAS AUTOMOTRICES</value>
+  </data>
+  <data name="Esclareça suas dúvidas com nossa equipe de Assistência Técnica" xml:space="preserve">
+    <value>Aclare sus dudas con nuestro equipo de Asistencia Técnica</value>
+  </data>
+  <data name="Excelência operacional, processos avançados e reengenharia de ponta" xml:space="preserve">
+    <value>Excelencia operacional, procesos avanzados y reingeniería de punta</value>
+  </data>
+  <data name="GARANTIA" xml:space="preserve">
+    <value>GARANTÍA</value>
+  </data>
+  <data name="Instruções de instalação e condições de garantia" xml:space="preserve">
+    <value>Instrucciones de instalación y condiciones de garantía</value>
+  </data>
+  <data name="Lançamentos" xml:space="preserve">
+    <value>Lanzamiento</value>
+  </data>
+  <data name="LANÇAMENTOS SCHADEK" xml:space="preserve">
+    <value>LANZAMIENTOS SCHADEK</value>
+  </data>
+  <data name="Lançamento_-_B.A_-_Atualização__-_PT.png" xml:space="preserve">
+    <value>Lançamento_-_B.A_-_Atualização__-_ES.png</value>
+  </data>
+  <data name="listOfReleases" xml:space="preserve">
+    <value>&lt;ul class="description"&gt;
+&lt;li&gt;Bomba de aceite 10.243-A. Para motores Caterpillar 3116 con engranaje planetario.&lt;/li&gt;
+&lt;li&gt;Bomba de aceite 10.328. Para motores Volkswagen 1.6 16V MSI.&lt;/li&gt;
+&lt;li&gt;Bomba de aceite 10.340. Para cajas de cambio Scania.&lt;/li&gt;
+&lt;li&gt;Bomba de agua 20.254. Para motores Fiat Fire Evo.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="NOVA IDENTIDADE VISUAL, NOVAS EMBALAGENS, A QUALIDADE DE SEMPRE" xml:space="preserve">
+    <value>NUEVA IDENTIDAD VISUAL, NUEVOS EMBALAJES, LA CALIDAD DE SIEMPRE</value>
+  </data>
+  <data name="NOVA LINHA SCHADEK" xml:space="preserve">
+    <value>NUEVA LÍNEA SCHADEK</value>
+  </data>
+  <data name="NOVAS BOMBAS D’ÁGUA E DE COMBUSTÍVEL COM PREÇOS MAIS COMPETITIVOS" xml:space="preserve">
+    <value>NUEVAS BOMBAS DE AGUA Y DE COMBUSTIBLE CON PRECIOS MÁS COMPETITIVOS</value>
+  </data>
+  <data name="O maior portfólio de bombas automotivas do mercado" xml:space="preserve">
+    <value>El mayor portafolio de bombas automotrices del mercado</value>
+  </data>
+  <data name="O Maior portfólio de bombas d'água do mercado" xml:space="preserve">
+    <value>El mayor portafolio de bombas de agua del mercado</value>
+  </data>
+  <data name="PRODUTOS" xml:space="preserve">
+    <value>PRODUCTOS</value>
+  </data>
+  <data name="QUALIDADE POR DENTRO E POR FORA" xml:space="preserve">
+    <value>CALIDAD POR DENTRO Y POR FUERA</value>
+  </data>
+  <data name="QUER ENCONTRAR A BOMBA SCHADEK NA PALMA DA MÃO?" xml:space="preserve">
+    <value>¿QUIERES ENCONTRAR LA BOMBA SCHADEK EN LA PALMA?</value>
+  </data>
+  <data name="SAIBA MAIS" xml:space="preserve">
+    <value>Descubre más</value>
+  </data>
+  <data name="SUPORTE" xml:space="preserve">
+    <value>SOPORTE</value>
+  </data>
+  <data name="TECNOLOGIA" xml:space="preserve">
+    <value>TECNOLOGÍA</value>
+  </data>
+  <data name="KIT-DE-DISTRIBUIÇÃO.JPG" xml:space="preserve">
+    <value>KIT-DE-DISTRIBUIÇÃO-ESP.JPG</value>
+  </data>
+  <data name="POLIAS-E-TENSIONADORES.JPG" xml:space="preserve">
+    <value>POLIAS-E-TENSIONADORES-ESP.JPG</value>
+  </data>
+  <data name="Bnn_-_Kit_de_distribuição_3.png" xml:space="preserve">
+    <value>Bnn_-_Kit_de_distribuição_3_-_Espanhol.PNG</value>
+  </data>
+  <data name="A Schadek" xml:space="preserve">
+    <value>Schadek</value>
+  </data>
+  <data name="Com mais de 55 anos de atuação no ramo automotivo, a Schadek Automotive é a empresa líder de mercado quando o assunto é Bombas Automotivas.São anos de investimentos contínuos em tecnologias, inovações, equipamentos e colaboradores para atender o mercado com o nível de excelência." xml:space="preserve">
+    <value>Con más de 55 años de experiencia em la indústria automotriz, Schadek Automotive es el líder del mercado cuando se trata de Bomba Automotivas.
+Son años de inversiones contínuas en tecnologias, innovaciones, equipos y empleados para servir   al mercado con el nível de excelencia.</value>
+  </data>
+  <data name="QUALIDADE" xml:space="preserve">
+    <value>CALIDAD</value>
+  </data>
+  <data name="se tornou referência quando o assunto são Bombas Automotivas. Por isso está sempre investindo em novos produtos e tecnologias para o mercado. No ano de 2020, mesmo com muitos desafios encontrados em diversas questões, a empresa continuou inovando e trouxe mais de 50 novos produtos para o mercado de reposição. Entre Bombas de Óleo, Bombas D´água e Bombas de Combustível.Garantindo a sua posição de líder no mercado nacional de reposição automotiva, contando com o maior portfólio do mercado." xml:space="preserve">
+    <value>se ha convertido en referencia cuando se trata de Bombas Automotivas. Por esto siempre está invirtiendo en nuevos productos y tecnologías para el mercado. En el año de 2020, incluso con muchos desafíos encontrados en varios temas, la compañía continua la innovando y trajó más de 50 nuevos productos al mercado de reposición. Entre bombas de Aceite, bombas de agua y bombas de combustible.
+Asegurando su posición como líder en el mercado nacional de reposición automotiva, contando con el mayor portafolio del mercado.</value>
+  </data>
+  <data name="É assim que a Schadek assegura que os padrões de qualidade definidos no início do processo de desenvolvimento sejam aplicados com rigor." xml:space="preserve">
+    <value>Así es que como Schadek asegura que el nivel de calidad definidos al comienzo del proceso de desarrollo sean apliquen de manera rigurosa.</value>
+  </data>
+  <data name="Evoluindo e buscando sempre aprimorar a sua linha de produtos a Schadek incorporou no seu portfólio mais uma linha: Polias e Tensionadores.Neste lançamento são mais de 300 parts numbers, com tecnologia, alto desempenho e a qualidade e confiança da Schadek que você já conhece e confía." xml:space="preserve">
+    <value>Desarrollando y buscando siempre mejorar su línea de productos, Schadek incorporó en su cartera más otra línea: Poleas y Tensores
+En este lanzamiento hay más de 300 part numbers, con tecnología, alto rendimiento y la calidad y confianza de Schadek que usted ya conoce y confías.</value>
+  </data>
+  <data name="Polias e" xml:space="preserve">
+    <value>POLEAS Y</value>
+  </data>
+  <data name="Tensionadores" xml:space="preserve">
+    <value>TENSORES</value>
+  </data>
+  <data name="55 anos" xml:space="preserve">
+    <value>55 años</value>
+  </data>
+  <data name="Distribuição" xml:space="preserve">
+    <value>Distribución</value>
+  </data>
+  <data name="e assegura a qualidade superior dos produtos.Com essa certificação a Schadek está habilitada a atender não somente mais o mercado de reposição, como também diretamente as grandes montadoras e sistemistas.A experiência de mais de" xml:space="preserve">
+    <value>Con esta certificación, Schadek esta habilitada a atender no solamente mas el mercado de reposición, como también directamente a los grandes fabricantes y sistemistas.
+La experiencia de más de</value>
+  </data>
+  <data name="gigantes do setor automotivo" xml:space="preserve">
+    <value>gigantes del sector automotivo</value>
+  </data>
+  <data name="img/index/lancamentos/lancamentosMobilePT.png" xml:space="preserve">
+    <value>img/index/lancamentos/lancamentosMobileES.png</value>
+  </data>
+  <data name="img/index/lancamentos/lancamentosSitePT.png" xml:space="preserve">
+    <value>img/index/lancamentos/lancamentosSiteES.png</value>
+  </data>
+  <data name="img/index/lancamentos/lancamentosTabletPT.png" xml:space="preserve">
+    <value>img/index/lancamentos/lancamentosTabletES.png</value>
+  </data>
+  <data name="img/index/polias/poliasTensionadoresMobilePT.png" xml:space="preserve">
+    <value>img/index/polias/poliasTensionadoresMobileES.png</value>
+  </data>
+  <data name="img/index/polias/poliasTensionadoresSitePT.png" xml:space="preserve">
+    <value>img/index/polias/poliasTensionadoresSiteES.png</value>
+  </data>
+  <data name="img/index/polias/poliasTensionadoresTabletPT.png" xml:space="preserve">
+    <value>img/index/polias/poliasTensionadoresTabletES.png</value>
+  </data>
+  <data name="Kits de" xml:space="preserve">
+    <value>Kite de</value>
+  </data>
+  <data name="na produção de Bombas Automotivas, que mantiveram a empresa como líder no mercado de reposição e os altos parâmetros de precisão presentes em todas as fases do processo produtivo, garantiram que a Schadek cumprisse todas as exigências feitas pelos órgãos responsáveis com máxima eficiência." xml:space="preserve">
+    <value>en la producción de bomba automotivas, que mantuvo la compañía como líder en el mercado de repuestos y los altos parámetros de alta precisión presentes en todas las etapas del proceso productivo, aseguró que Schadek cumpliera todos los requisitos exigidos por los Òrganos Responsables con la máxima eficacia.</value>
+  </data>
+  <data name="O comprometimento com a alta qualidade e a tecnologia promoveram a Schadek Automotive mais um certificado de grande prestígio para as indústrias do setor automotivo.A certificação IATF 16949 é oferecida apenas para os" xml:space="preserve">
+    <value>El comprometimiento con alta calidad y la tecnología ha impulsado a Schadek Automotive un Certificado más de gran prestigio para las industrias del sector de la automoción.
+La certificación IATF 16949 se ofrece solo a los</value>
+  </data>
+  <data name="Pensando sempre em inovação, a Schadek Automotive se reinventou mais uma vez e trouxe para o mercado mais um lançamento: Kits de Distribuição com corrente! Os Kits de Distrbuição da Schadek Automotive possuem diversas composições, podendo ser Simples, Parciais ou Completos. Cada um, com componentes específicos como: Correntes, engrenagens, tensores, alavancas, guias, retentores e etc.  Os componentes do Kit de Distribuição Schadek possuem a garantia e qualidade dos produtos da Schadek Automotive." xml:space="preserve">
+    <value>Siempre apostando por la innovación, Schadek Automotive se reinventó una vez más y trajo otro lanzamiento al mercado: ¡Kits de distribución con cadena! Los kits de distribución automotriz de Schadek tienen varias composiciones, que pueden ser simples, parciales o completas. Cada uno, con componentes específicos como: Cadenas, engranajes, tensores, palancas, guías, retenedores, etc. Los componentes del Kit de Distribución Schadek cuentan con la garantía y calidad de los productos Schadek Automotive.</value>
+  </data>
+  <data name="Clique aqui e veja as aplicações completas!" xml:space="preserve">
+    <value>¡Consulte las aplicaciones completas aquí!</value>
+  </data>
+</root>

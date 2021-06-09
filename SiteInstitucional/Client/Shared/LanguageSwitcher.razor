@@ -1,0 +1,36 @@
+﻿@using  System.Globalization
+@inject IJSRuntime JsRuntime
+@inject NavigationManager NavManager
+
+<div class="btn-group btn-group-sm" role="group" aria-label="Idiomas">
+    @foreach (var culture in _supportedCultures)
+    {
+        <button type="button" class="btn btn-link py-0" @onclick="@(evt => Culture = culture)">
+            <img src="img/flags/@($"{culture.Name}.png")" alt="@culture.DisplayName" title="@culture.DisplayName"/>
+        </button>
+    }
+</div>
+
+@code
+{
+    private CultureInfo[] _supportedCultures = {
+        new CultureInfo("pt-BR"),
+        new CultureInfo("en-US"),
+        new CultureInfo("es-ES")
+    };
+
+    CultureInfo Culture
+    {
+        get => CultureInfo.CurrentCulture;
+        set
+        {
+            if (CultureInfo.CurrentCulture != value)
+            {
+                var js = (IJSInProcessRuntime)JsRuntime;
+                js.InvokeVoid("blazorCulture.set", value.Name);
+
+                NavManager.NavigateTo(NavManager.Uri, true);
+            }
+        }
+    }
+}

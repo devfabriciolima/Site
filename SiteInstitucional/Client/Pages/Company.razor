@@ -1,0 +1,306 @@
+﻿@page "/Company"
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<Company> Localizer
+
+<PageHeader PageType="@typeof(Company)" ImageName="company.jpg" />
+
+<div class="container-fluid plant cor-cinza">
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-12">
+                <h4 class="text-uppercase title">@Localizer["TRAJETÓRIA"]</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="text text-justify">
+                    @Localizer["Tudo começou em 1965, com a produção de peças fundidas sob pressão para motocicletas, automóveis e aparelhos de uso doméstico. Três anos mais tarde, o início da produção de bombas de óleo marcou a entrada definitiva da Schadek no mercado de reposição automotiva."]
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text text-justify">
+                    @Localizer["Desde então, excelência operacional, processos produtivos avançados e reengenharia em estado da arte construíram a história de sucesso da marca referência de qualidade em bombas automotivas."]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid history cor-cinza">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-uppercase title">@Localizer["LINHA DO TEMPO"]</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card-group cor-branco">
+                    <div class="card">
+                        <div class="card-body inverted cor-fundo-preto text-center">
+                            <p class="card-text">
+                                @Localizer["Fundação"]
+                            </p>
+                            <h2 class="card-title cor-laranja">1965</h2>
+                        </div>
+                        <img src="img/company/history01.jpg" class="w-100 h-50" />
+                    </div>
+                    <div class="card">
+                        <img src="img/company/history02.jpg" class="w-100 h-50" />
+                        <div class="card-body cor-fundo-preto text-center">
+                            <h2 class="card-title cor-laranja">1968</h2>
+                            <p class="card-text">@Localizer["Início da fabricação de bombas de óleo"]</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body inverted cor-fundo-preto text-center">
+                            <p class="card-text">
+                                @Localizer["Início das exportações para Estados Unidos e México"]
+                            </p>
+                            <h2 class="card-title cor-laranja">1970</h2>
+                        </div>
+                        <img src="img/company/history03.jpg" class="w-100 h-50" />
+                    </div>
+                    <div class="card">
+                        <img src="img/company/history04.jpg" class="w-100 h-50" />
+                        <div class="card-body cor-fundo-preto text-center">
+                            <h2 class="card-title cor-laranja">1982</h2>
+                            <p class="card-text">@Localizer["Inauguração da fábrica em Porto Feliz (SP)"]</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body inverted cor-fundo-preto text-center">
+                            <p class="card-text">
+                                @Localizer["Início da fabricação de bombas d’água"]
+                            </p>
+                            <h2 class="card-title cor-laranja">1994</h2>
+                        </div>
+                        <img src="img/company/history05.png" class="w-100 h-50 cor-fundo-cinza-claro" />
+                    </div>
+                    <div class="card">
+                        <img src="img/company/history06.png" class="w-100 h-50 cor-fundo-cinza-claro" />
+                        <div class="card-body cor-fundo-preto text-center">
+                            <h2 class="card-title cor-laranja">2015</h2>
+                            <p class="card-text">@Localizer["Início da fabricação de bombas de combustível"]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid today cor-branco">
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-8">
+                <h4 class="text-uppercase title cor-laranja">@Localizer["HOJE"]</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p class="text">
+                    @Localizer["Líder em bombas de óleo no mercado nacional, as soluções Schadek alcançam mais de 30 países, atendendo às diferentes necessidades dos clientes com qualidade, confiança e competitividade."]
+                </p>
+            </div>
+        </div>
+        <div class="row d-none d-md-flex card-list mt-5 pb-4">
+            <div class="offset-1 col-2">
+                <div class="card text-center">
+                    <div class="card-body text-shadow">
+                        <p class="card-text mb-0 mt-3 description">
+                            @Localizer["Maior portfólio do mercado"]
+                        </p>
+                        <h5 class="card-title title">@Localizer["CERCA DE"] <b>@Localizer["1.000"]</b> <sup>@Localizer["ITENS"]</sup></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-1 col-3">
+                <div class="card text-center">
+                    <div class="card-body text-shadow">
+                        <p class="card-text mb-0 mt-3 description">
+                            @Localizer["Investimentos constantes na"]
+                        </p>
+                        <h5 class="card-title title">@Localizer["na ampliação da fábrica"]</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-1 col-3">
+                <div class="card text-center">
+                    <div class="card-body text-shadow">
+                        <p class="card-text mb-0 mt-3 description">
+                            @Localizer["Volume de produção"]
+                        </p>
+                        <h5 class="card-title title">@Localizer["1 MILHÃO PEÇAS/MÊS"]</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center">
+                    <div class="card-body text-shadow">
+                        <p class="card-text mb-0 mt-3 description">
+                            @Localizer["Excelência"]
+                        </p>
+                        <h3 class="card-title title">700</h3>
+                        <p class="card-title title">@Localizer["COLABORADORES"]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card-body text-shadow">
+                        <p class="card-text mb-0 mt-3 description">
+                            @Localizer["Exporta para"]
+                        </p>
+                        <h5 class="card-title title">@Localizer["MAIS DE"] <b>30</b> <sup>@Localizer["PAÍSES"]</sup></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card-body text-shadow">
+                        <p class="card-text mb-0 mt-3 description">
+                            @Localizer["Instalações industriais"]
+                        </p>
+                        <h5 class="card-title title">@Localizer["46.000 M2"]</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-1 col-4">
+                <div class="card text-center">
+                    <div class="card-body text-shadow">
+                        <p class="card-text mb-0 mt-3 description">
+                            @Localizer["Presença em"]
+                        </p>
+                        <h5 class="card-title title">@Localizer["MONTADORAS E SISTEMISTAS"]</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card-body text-shadow">
+                        <p class="card-text mb-0 mt-3 description">
+                            @Localizer["Gestão da Informação"]
+                        </p>
+                        <h5 class="card-title title">SAP</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid certificates cor-branco cor-fundo-laranja">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12 col-md-4">
+                <h4 class="text-uppercase title cor-preto">
+                    @Localizer["CERTIFICADOS"]
+                </h4>
+                <p class="text">
+                    @Localizer["A excelência da gestão, dos produtos e dos processos Schadek receberam as principais certificações do mercado: ISO 9001 e IATF 16949"]
+                </p>
+            </div>
+            <div class="col-6 col-md-2">
+                <button class="btn" @onclick="@(e => ViewCertificate(CertificateIso9001))">
+                    <img src="@CertificateIso9001" class="w-100" />
+                </button>
+            </div>
+            <div class="col-6 col-md-2">
+                <button class="btn" @onclick="@(e => ViewCertificate(CertificateIatf16949))">
+                    <img src="@CertificateIatf16949" class="w-100" />
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid environment cor-cinza">
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-12">
+                <h4 class="text-uppercase title">@Localizer["RESPONSABILIDADE SOCIOAMBIENTAL"]</h4>
+            </div>
+            <div class="row pb-4">
+                <div class="col-12">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="img/company/environment01.jpg" class="card-img-top" />
+                            <div class="card-body pl-0">
+                                <h4 class="card-title title text-uppercase">
+                                    @Localizer["FÁBRICA"]
+                                </h4>
+                                <p class="card-text text">
+                                    @Localizer["A gestão ambiental Schadek controla todos os processos industriais com o objetivo de atender e superar os requisitos de segurança exigidos pelos órgãos fiscalizadores. Desde os cuidados para evitar a contaminação do solo até o correto descarte de resíduos do processo fabril."]
+                                </p>
+                                <h5 class="title cor-laranja">
+                                    @Localizer["Gestão da água"]
+                                </h5>
+                                <h4 class="title cor-laranja">
+                                    @Localizer["100% de captação"]
+                                </h4>
+                                <h5 class="title cor-laranja">@Localizer["interna, tratamento e reúso"]</h5>
+                                <p class="card-text text">@Localizer["A Schadek capta, trata e reutiliza os 720 mil litros de água consumidos mensalmente na sua moderna Estação de Tratamento de Efluente Industrial e Tratamento de Esgoto."]</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/company/environment02.jpg" class="card-img-top" />
+                            <div class="card-body pl-0">
+                                <h4 class="card-title title text-uppercase">@Localizer["MEIO AMBIENTE"]</h4>
+                                <h4 class="title cor-laranja">@Localizer["Preservação ambiental"]</h4>
+                                <h5 class="title cor-laranja">@Localizer["116 mil m2"]</h5>
+                                <p class="card-text text">@Localizer["A Schadek destinou uma área 60% maior do que sua unidade fabril para a preservação ambiental. Em 2005 criou a Área Elizabeth Charlote Magalhães com mais de 116 mil m2 de rica biodiversidade, com nascente preservada, lago para criação de peixes, apiário, árvores frutíferas e mudas de árvores nativas, muitas delas plantadas pela própria Schadek, que mantém a área desde a sua criação."]</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/company/environment03.jpg" class="card-img-top" />
+                            <div class="card-body pl-0">
+                                <h4 class="card-title title text-uppercase">@Localizer["PROJETOS SOCIAIS"]</h4>
+                                <p class="card-text text">@((MarkupString)Localizer["A Schadek acredita ser sua responsabilidade contribuir para o desenvolvimento das comunidades onde seus funcionários trabalham e vivem. Por isso, apoia iniciativas que promovem a cultura, a educação e a inclusão social, como as Oficinas de Práticas Orquestrais do <b>Instituto de Educação Musical SONORUM</b> e as atividades educacionais da <b>Associação Monte Carmelo</b>."].Value)</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/company/environment04.png" class="card-img-top" />
+                            <div class="card-body pl-0">
+                                <h4 class="card-title title text-uppercase">@Localizer["A SCHADEK GANHA MAIS UM CERTIFICADO!"]</h4>
+                                <p class="card-text text">
+                                    @((MarkupString)Localizer["Em mais uma ação de <strong>RESPONSABILIDADE SOCIOAMBIENTAL</strong>, no ano 2020 nós reduzimos 498,21 Toneladas de CO2, o que corresponde ao plantio de 3.487 árvores em um projeto de reflorestamento de 30 anos."].Value)
+                                </p>
+                                <p class="card-text text">
+                                    @Localizer["Isso porque a Schadek adquire energia de fontes renováveis por meio do mercado livre de energia. Quem consome energia de fontes limpas, como eólica, solar fotovoltaica, biomassa, ou, ainda, proveniente de Pequenas Centrais Hidrelétricas (PCHs), colabora para reduzir as emissões de gases poluentes na atmosfera."]
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<Modal @ref="_modalRef">
+    <ModalBackdrop />
+    <ModalContent IsCentered="true">
+        <ModalBody>
+            <img src="@_imageUri" class="w-100" />
+        </ModalBody>
+    </ModalContent>
+</Modal>
+
+@code{
+
+    private const string CertificateIso9001 = "img/company/ISO9001_PT_01.jpg";
+    private const string CertificateIatf16949 = "img/company/IATF16949_EN_01.jpg";
+
+    private Modal _modalRef;
+    private string _imageUri;
+
+    private void ViewCertificate(string certificatePath)
+    {
+        if (_modalRef is null) return;
+
+        _imageUri = $"/{certificatePath}";
+        _modalRef.Show();
+    }
+}

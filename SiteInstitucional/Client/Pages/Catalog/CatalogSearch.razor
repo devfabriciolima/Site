@@ -1,0 +1,104 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<CatalogSearch> Localizer
+
+<div class="container-fluid @CssClass">
+    <div class="container pb-3">
+        <div class="row mt-5 mb-0">
+            <div class="col-12 col-md-4">
+                <h2 class="title cor-laranja text-uppercase mb-0">@Localizer["CATÁLOGO ONLINE"]</h2>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row search-type">
+                    <div class="col-6 text-center pr-0 @_searchByApplicationClass">
+                        <button class="btn btn-block sub-title text-uppercase p-0" @onclick="ToogleSearchType">
+                            @Localizer["BUSCA POR APLICAÇÃO"]
+                        </button>
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="col-6 col-md-5 text-center pl-1 @_searchByCodeClass">
+                        <button class="btn btn-block sub-title text-uppercase p-0" @onclick="ToogleSearchType">
+                            @Localizer["BUSCA POR CÓDIGO"]
+                        </button>
+                        <span>&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-2">
+                <img src="/img/icon-product-search.png" class="search-icon" />
+            </div>
+        </div>
+        <div class="row application-search py-2 @_searchByApplicationClass">
+            <div class="col-12 col-md-2 col-lg-2 px-1">
+                <select class="custom-select p-1" @onchange="OnSelectSegment">
+                    <option>@Localizer["Selecione o Segmento"]</option>
+                    @if (_segments != null)
+                    {
+                        @foreach (var item in _segments)
+                        {
+                            <option value="@item.Name">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 px-1">
+                <select class="custom-select p-1" disabled="@DisableAutomaker" @onchange="OnSelectAutomaker">
+                    <option>@Localizer["Selecione a Montadora"]</option>
+                    @if (_automakers != null)
+                    {
+                        @foreach (var item in _automakers)
+                        {
+                            <option value="@item.Name">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-12 col-md-2 col-lg-3 px-1">
+                <select class="custom-select p-1" disabled="@DisableModel" @onchange="OnSelectModel">
+                    <option>@Localizer["Selecione o Modelo"]</option>
+                    @if (_models != null)
+                    {
+                        @foreach (var item in _models)
+                        {
+                            <option value="@item.Name">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 px-1">
+                <select class="custom-select p-1" disabled="@DisableEngineType" @onchange="OnSelectEngineType">
+                    <option>@Localizer["Selecione a Motorização"]</option>
+                    @if (_engineTypes != null)
+                    {
+                        @foreach (var item in _engineTypes)
+                        {
+                            <option value="@item.Name">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-12 col-md-2 col-lg-1 px-1">
+                <button class="btn btn-schadek btn-block text-uppercase p-0"
+                        @onclick="SearchByApplication">
+                    @Localizer["Buscar"]
+                </button>
+            </div>
+        </div>
+        <div class="row code-search py-2 @_searchByCodeClass">
+            <div class="col-12 col-md-10">
+                <div class="form-group row mb-0">
+                    <label for="productCode" class="col-sm-4 col-form-label">@Localizer["Código Schadek/Outros Códigos"]</label>
+                    <div class="col-sm-8">
+                        <input id="productCode" type="text" class="form-control px-1"
+                               placeholder="@Localizer["Digite o código"]" @bind="_code" @onkeyup="SearchByCodeKeyUp" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <button class="btn btn-schadek btn-block text-uppercase p-0"
+                        @onclick="SearchByCode">
+                    @Localizer["Buscar"]
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

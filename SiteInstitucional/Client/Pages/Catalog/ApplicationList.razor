@@ -1,0 +1,48 @@
+﻿@page "/ApplicationList"
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<ApplicationList> Localizer
+
+<CatalogSearch IsApplicationListPage="@true" CssClass="pt-4" />
+
+<div class="container mt-4">
+    @if (_applications != null && _applications.Length > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr class="cor-cinza cor-fundo-cinza-claro text-uppercase">
+                    <th class="d-none d-md-table-cell d-lg-table-cell px-1 py-2" scope="col">@Localizer["Fabricante"]</th>
+                    <th class="d-none d-md-table-cell d-lg-table-cell px-1 py-2" scope="col">@Localizer["Modelo"]</th>
+                    <th class="px-1 py-2" scope="col">@Localizer["Motorização"]</th>
+                    <th class="px-1 py-2" scope="col">@Localizer["Ano Produção"]</th>
+                    <th class="px-1 py-2" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var application in _applications)
+                {
+                    <tr class="cor-cinza">
+                        <td class="d-none d-md-table-cell d-lg-table-cell px-1 py-2">@application.Automaker</td>
+                        <td class="d-none d-md-table-cell d-lg-table-cell px-1 py-2">@application.Model</td>
+                        <td class="px-1 py-2">@application.EngineType</td>
+                        <td class="px-1 py-2">@application.ProductionPeriod</td>
+                        <td class="px-1 py-2">
+                            <button class="btn btn-schadek btn-block text-uppercase p-0"
+                                    @onclick="@(e => ViewProducts(application))"
+                                    title="@Localizer["Mostrar Produtos"]">
+                                <span class="d-none d-md-block">@Localizer["Mostrar Produtos"]</span>
+                                <i class="d-md-none fas fa-plus-circle"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning" role="alert">
+            @Localizer["Nenhuma aplicação encontrada."]
+        </div>
+    }
+</div>

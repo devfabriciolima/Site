@@ -1,0 +1,91 @@
+﻿@using Microsoft.Extensions.Localization
+@using Microsoft.JSInterop.Implementation
+@using SiteInstitucional.Shared.I18n.Client
+@inject IStringLocalizer<Header> Localizer
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top p-0">
+        <div class="container-fluid px-0 d-flex flex-column align-items-start w-100">
+            <div class="navbar-header w-100 no-gutters px-md-5 row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <NavLink class="nav-link navbar-brand pt-2 m-0" href="" Match="NavLinkMatch.All">
+                        <img src="img/brand-100x83.png" alt="Logomarca da Schadek" />
+                    </NavLink>
+                </div>
+                <div class="col-auto cor-branco duvidas">
+                    <div class="row text-uppercase d-none d-lg-flex">
+                        <div class="offset-1 col-11 pl-0">
+                            <h6 class="cor-branco">@Localizer[SiteHeaderKeys.PhonesTitle]</h6>
+                        </div>
+                    </div>
+                    <div class="row text-uppercase telefones d-none d-lg-flex">
+                        <div class="col-auto pr-0">
+                            <img src="img/icon-whatsapp.png" alt="WhatsApp" />
+                        </div>
+                        <div class="col-auto pl-1">
+                            <h4 class="cor-laranja">@Localizer["15 99677-4204"]</h4>
+                        </div>
+                        <div class="col-auto pr-0">
+                            <img src="img/icon-phone.png" alt="Central de Atendimento" />
+                        </div>
+                        <div class="col-auto pl-1">
+                            <h4 class="cor-laranja">@Localizer["0800 775 0302"]</h4>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-auto text-center text-lg-right">
+                            <LanguageSwitcher />
+                            <button class="navbar-toggler navbar-toggler-right" type="button" onclick="toogleMenu();">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-collapse offcanvas-collapse w-100 no-gutters px-5 row justify-content-between" id="navbarNav">
+                <div class="col-12 col-md-auto pl-2">
+                    <ul class="navbar-nav text-uppercase cor-branco mr-auto">
+                        @foreach (var item in MenuBuilder.Build())
+                        {
+                        <li class="nav-item">
+                            <NavLink class="nav-link px-3 px-lg-2 px-xl-3 py-0" href="@item.CompleteRoute" onclick="hideMenu()">
+                                @Localizer[item.Description]
+                            </NavLink>
+                        </li>
+                        }
+                    </ul>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Redes Sociais">
+                        <a class="btn btn-link py-0" href="https://www.facebook.com/Schadek/" target="_blank">
+                            <i style="font-size: 20px;" class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-link py-0" href="https://www.instagram.com/schadekautomotive/" target="_blank">
+                            <i style="font-size: 20px;" class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-link py-0" href="https://www.youtube.com/user/metalurgicaschadek" target="_blank">
+                            <i style="font-size: 20px;" class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-link py-0" href="https://twitter.com/schadek" target="_blank">
+                            <i style="font-size: 19px;" class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-link py-0" href="https://www.linkedin.com/company/schadek-automotive" target="_blank">
+                            <i style="font-size: 18px;" class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+@code {
+    private bool _collapseMenu = false;
+    private string MainMenuCssClass => _collapseMenu ? "collapse" : null;
+
+    private void ToggleMainMenu()
+    {
+        _collapseMenu = !_collapseMenu;
+    }
+
+}

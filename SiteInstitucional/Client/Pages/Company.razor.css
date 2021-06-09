@@ -1,0 +1,174 @@
+﻿.title {
+    font-family: 'Gotham-Black';
+}
+
+.text {
+    font-family: 'Gotham-Book';
+    font-size: .9em;
+}
+
+    .text ::deep strong {
+        color: var(--cor-laranja);
+        font-family: 'Gotham-Black';
+    }
+
+.plant {
+    background-image: url(/img/company/company.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 42vw;
+}
+
+    .plant .text {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+@media (min-width: 992px) {
+    .plant .text {
+        background: none;
+    }
+}
+
+.history {
+    background-image: url(/img/company/history-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .history .card-title {
+        font-family: 'Gotham-Thin';
+    }
+
+    .history .card-text {
+        font-family: 'Gotham-Book';
+        font-size: .9em;
+    }
+
+    .history .card {
+        border: 0;
+    }
+
+        .history .card > :first-child {
+            border-bottom: 4px solid #DB8E18;
+        }
+
+.today {
+    background-image: url(/img/company/today-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .today .card {
+        border: 0;
+        position: relative;
+        background: none;
+        width: auto;
+    }
+
+        .today .card:after {
+            content: "";
+            display: block;
+        }
+
+        .today .card .card-body {
+            border-radius: 50%;
+            background-size: 130%;
+            background-position: -20px -40px;
+        }
+
+    .today .card-title {
+        margin: 0;
+    }
+
+    .today .title b {
+        line-height: 0;
+        font-size: 1.5em;
+    }
+
+    .today .card-list > div:nth-child(1) .card-body {
+        height: 15vw;
+        width: 15vw;
+        background-image: url(/img/company/today01.jpg);
+        margin-top: -4vw;
+    }
+
+    .today .card-list > div:nth-child(2) .card-body {
+        height: 17vw;
+        width: 17vw;
+        background-image: url(/img/company/today02.jpg);
+        padding-top: 3rem !important;
+    }
+
+    .today .card-list > div:nth-child(3) .card-body {
+        height: 14vw;
+        width: 14vw;
+        background-image: url(/img/company/today03.jpg);
+        margin-top: -8vw;
+    }
+
+    .today .card-list > div:nth-child(4) .card-body {
+        height: 13.5vw;
+        width: 13.5vw;
+        background-image: url(/img/company/today04.jpg);
+        margin-top: -4vw;
+    }
+
+        .today .card-list > div:nth-child(4) .card-body p.title {
+            font-size: .8em;
+        }
+
+    .today .card-list > div:nth-child(5) .card-body {
+        height: 13.5vw;
+        width: 13.5vw;
+        background-image: url(/img/company/today05.jpg);
+    }
+
+    .today .card-list > div:nth-child(6) .card-body {
+        height: 17.5vw;
+        width: 17.5vw;
+        background-image: url(/img/company/today06.jpg);
+        margin-top: -5vw;
+        padding-top: 4rem !important;
+    }
+
+    .today .card-list > div:nth-child(7) .card-body {
+        height: 17vw;
+        width: 17vw;
+        background-image: url(/img/company/today07.jpg);
+        padding-top: 3rem !important;
+    }
+
+    .today .card-list > div:nth-child(8) .card-body {
+        height: 13.5vw;
+        width: 13.5vw;
+        background-image: url(/img/company/today08.jpg);
+        margin-top: -3vw;
+    }
+
+.environment {
+    background-image: url(/img/company/environment-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .environment .card {
+        border: 0;
+        border-radius: 0;
+        background: none;
+    }
+
+        .environment .card .card-img-top {
+            border-radius: 50%;
+        }
+
+        .environment .card:not(:last-child) .card-body {
+            border-right: 4px solid #DB8E18;
+        }
+
+    .environment .card-body p.text {
+        font-size: 0.8em;
+    }
+
+        .environment .card-body p.text b {
+            font-family: 'Gotham-Black';
+        }

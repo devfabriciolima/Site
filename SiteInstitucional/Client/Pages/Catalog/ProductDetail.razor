@@ -1,0 +1,175 @@
+﻿@page "/ProductDetail/{code}"
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<ProductDetail> Localizer
+
+<CatalogSearch CssClass="pt-4" />
+
+<div class="container cor-cinza mt-4 mb-4">
+    @if (_product != null)
+    {
+        <div class="row title text-uppercase pb-3">
+            <div class="col-12">
+                <h1>@Localizer["DETALHES DO PRODUTO"]: @_product.Code</h1>
+                @if (_product.HasOldCode)
+                {
+                    <h1 class="old-code">(@_product.OldCode)</h1>
+                }
+            </div>
+        </div>
+        <div class="row product mt-2">
+            <div class="col-12 col-md-3 align-self-start text-center">
+                <img src="/api/static/products-images/@_product.Code/thumbnail" class="w-100" />
+                <button class="btn" @onclick="@(e => ViewImage(_product))">
+                    <i class="fa fa-search fa-2x cor-cinza" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12 align-self-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <span>@_product.Name</span>
+                            </div>
+                            @if (_product.HasNameComplement)
+                            {
+                                <div class="col-12">
+                                    <span><small>@_product.NameComplement</small></span>
+                                </div>
+                            }
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4 @(_product.HasOldCode ? "product-code" : "")">
+                                <h2>@_product.Code</h2>
+                            </div>
+                            @if (_product.HasOldCode)
+                            {
+                                <div class="col-12 col-md-4">
+                                    <h2>@_product.OldCode</h2><small>(@Localizer["cód. antigo"])</small>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12 text-uppercase">
+                        <ul class="nav nav-tabs nav-fill cor-fundo-cinza-claro">
+                            <li class="nav-item p-0">
+                                <a data-toggle="tab" class="text-decoration-none cor-cinza d-block h-100 py-2 active" href="#application">
+                                    @Localizer["Aplicações"]
+                                </a>
+                            </li>
+                            <li class="nav-item p-0">
+                                <a data-toggle="tab" class="text-decoration-none cor-cinza d-block h-100 py-2" href="#comercial-data">
+                                    @Localizer["Dados Comerciais"]
+                                </a>
+                            </li>
+                            @if (_product.HasComponents)
+                            {
+                                <li class="nav-item p-0">
+                                    <a data-toggle="tab" class="text-decoration-none cor-cinza d-block h-100 py-2" href="#components">
+                                        @Localizer["Componentes"]
+                                    </a>
+                                </li>
+                            }
+                            <li class="nav-item p-0">
+                                <a data-toggle="tab" class="text-decoration-none cor-cinza d-block h-100 py-2" href="#original-code">
+                                    @Localizer["Código Original"]
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="application" class="tab-pane fade active show">
+                                <table class="table table-responsive-md">
+                                    <thead>
+                                    <tr class="cor-fundo-cinza-medio cor-cinza-superclaro text-uppercase">
+                                        <th width="20%" class="px-1 py-2" scope="col">@Localizer["Fabricante"]</th>
+                                        <th width="20%" class="px-1 py-2" scope="col">@Localizer["Modelo"]</th>
+                                        <th width="20%" class="px-1 py-2" scope="col">@Localizer["Motorização"]</th>
+                                        <th width="20%" class="px-1 py-2" scope="col">@Localizer["Data (Inicial - Final)"]</th>
+                                        <th width="30%" class="px-1 py-2" scope="col">@Localizer["Obs"]</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @if (_applications != null && _applications.Length > 0)
+                                    {
+                                        @foreach (var application in _applications)
+                                        {
+                                            <tr class="cor-cinza">
+                                                <td class="px-1 py-2">@application.Automaker</td>
+                                                <td class="px-1 py-2">@application.Model</td>
+                                                <td class="px-1 py-2">@application.EngineType</td>
+                                                <td class="px-1 py-2">@application.ProductionPeriod</td>
+                                                <td class="px-1 py-2 text-wrap">@application.Comments</td>
+                                            </tr>
+                                        }}
+                                    </tbody>
+                                </table>
+                            </div>
+                            @if (_product.HasComponents)
+                            {
+                                <div id="components" class="tab-pane fade details">
+                                    <div class="container">
+                                        @if (_components != null)
+                                        {
+                                            @foreach (var component in _components)
+                                            {
+                                                <div class="row">
+                                                    <div class="col-6 py-1">@component</div>
+                                                </div>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            }
+                            <div id="comercial-data" class="tab-pane fade details">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 py-1">@Localizer["CÓDIGO BARRAS"]</div>
+                                        <div class="col-8 py-1 text-right">@_product.BarCode</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 py-1">@Localizer["CLASSIFICAÇÃO FISCAL"]</div>
+                                        <div class="col-8 py-1 text-right">@_product.TaxCode</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 py-1">@Localizer["CONTEÚDO"]</div>
+                                        <div class="col-8 py-1 text-right">@_product.PackageContent</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="original-code" class="tab-pane fade details">
+                                <div class="container">
+                                    @if (_automakersReferences != null)
+                                    {
+                                        @foreach (var reference in _automakersReferences)
+                                        {
+                                            <div class="row">
+                                                <div class="col-6 py-1">@reference.Automaker</div>
+                                                <div class="col-6 py-1 text-right">@reference.ReferenceCode</div>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <Modal @ref="_modalRef">
+            <ModalBackdrop />
+            <ModalContent IsCentered="true">
+                <ModalBody>
+                    <img src="@_imageUri" class="w-100" />
+                </ModalBody>
+            </ModalContent>
+        </Modal>
+    }
+    else
+    {
+        <div class="alert alert-warning" role="alert">
+            @Localizer["Nenhum produto encontrado."]
+        </div>
+    }
+</div>

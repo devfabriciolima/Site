@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BOMBAS DE COMBUSTÍVEL" xml:space="preserve">
+    <value>FUEL PUMPS</value>
+  </data>
+  <data name="BOMBAS DE ÓLEO" xml:space="preserve">
+    <value>OIL PUMPS</value>
+  </data>
+  <data name="BOMBAS D’ÁGUA" xml:space="preserve">
+    <value>WATER PUMPS</value>
+  </data>
+  <data name="Certificado de Garantia" xml:space="preserve">
+    <value>WARRANTY CERTIFICATE</value>
+  </data>
+  <data name="fuelpump-recommendation" xml:space="preserve">
+    <value>&lt;p&gt;Properly installing Schadek products guarantees performance for customers and gives you peace of mind. Remember: Failure to follow the installation instructions below will void any responsibility for damages to the water pump or engine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Never hold the fuel pump in a vise or any other device that can damage the fuel pump's body, because  kneading can cause locking of the internal gears or rotors;&lt;/li&gt;
+&lt;li&gt;Check that the fuel pump does not have any kneaded nor scratched areas caused by falls or hits, or oxidation (rust) caused by storage failure;&lt;/li&gt;
+&lt;li&gt;Make sure the fuel pump spins freely and has not sucked some dirt during handling;&lt;/li&gt;
+&lt;li&gt;Only use the gaskets, O-rings, screws, transfer tubes, etc. that come with the product in the packaging;&lt;/li&gt;
+&lt;li&gt;Tighten the fuel pump screws alternately and at the correct torque;&lt;/li&gt;
+&lt;li&gt;Verify the leakproofness of the fuel system, in order to avoid the fuel pump from sucking air while operating, as well as pressure losses in the system.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="fuelpump-warrantycertificate" xml:space="preserve">
+    <value>&lt;p&gt;METALÚRGICA SCHADEK LTDA certifies to the final consumer to be offering a product of the highest quality, in perfect condition and adequate for the purposes intended. Any manufacturing defect may be complained within ninety (90) days from the date of application of the product in the engine (under the law no. 8.078, September 11, 1990).&lt;/p&gt;
+&lt;p&gt;The trust SCHADEK has in the quality of its products allows also granting, besides the legal warranty, additional coverage, extending the period provided by law to up to one hundred eighty (180) days or ten thousand (10,000) kilometers, whichever occurs first, against any manufacturing defects.&lt;/p&gt;
+&lt;p&gt;The product must be sent to Metalúrgica Schadek Ltda., by prepaid freight, accompanied by the shipment guarantee invoice (complying with the information contained on that purchase invoice, such as price and taxes). As soon as received by SCHADEK, it will be evaluated technically.&lt;/p&gt;
+&lt;p&gt;If the following is confirmed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MANUFACTURING DEFECT: The product will be replaced with a new one, when retained in the company, and kept in stock for 10 days, after which it should be scrapped.&lt;/li&gt;
+&lt;li&gt;NO DEFECT OF MANUFACTURE: Will be returned in the state in which it is, and if replaced, it will be kept in stock for 10 days, and then scrapped.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="text-uppercase contrast"&gt;THE WARRANTY CEASES IN THE FOLLOWING CASES:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On application, installation, handling, use, improper or incorrect maintenance, performed by unqualified person without the appropriate equipment.&lt;/li&gt;
+&lt;li&gt;Violation of the product, signs of damage, if it presents kneading or breakage.&lt;/li&gt;
+&lt;li&gt;Failure to follow assembly instructions.&lt;/li&gt;
+&lt;li&gt;Product deterioration occurred by unsuitable oils, out of specifications by the engine manufacturer, contaminated, mixed, oxidized or aged.&lt;/li&gt;
+&lt;li&gt;If the Manufacturing Order number engraved on the product is adulterated.&lt;/li&gt;
+&lt;li&gt;If their defect is not due to manufacturing, but rather due to poor fitting on the engine or due to natural wear of the product.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Garantia" xml:space="preserve">
+    <value>WARRANTY</value>
+  </data>
+  <data name="Garantimos nossos produtos como livres de defeitos de materiais e fabricação durante o prazo de 90 (noventa) dias por força de lei, acrescido de 90 (noventa) dias adicionais concedidos pela Schadek, perfazendo um total de 180 (cento e oitenta) dias ou 10 mil Km, prevalecendo o que ocorrer primeiro. O prazo de garantia começa a contar a partir da data da emissão Nota Fiscal de venda ao consumidor final. As solicitações de garantia serão atendidas após análise detalhada da peça, realização de testes e emissão de laudo técnico. Verifique atentamente as instruções de instalação e condições de garantia para cada produto Schadek." xml:space="preserve">
+    <value>Schadek offers warranty for six months or 10,000 km for manufacturing problems in its products. Warranty requests are addressed after a detailed analysis of the part, testing, and issue of technical reports.
+Attentively check the installation instructions and warranty conditions for each Schadek product.</value>
+  </data>
+  <data name="oilpump-recommendation" xml:space="preserve">
+    <value>&lt;p&gt;Properly installing Schadek products guarantees performance for customers and gives you peace of mind. Remember: Failure to follow the installation instructions below will void any responsibility for damages to the water pump or engine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Be very careful when handling oil pumps that have a retainer. The inner lips of the oil seal should not be touched, for if kneading, the oil seal will not seal appropriately and oil spill occurs;&lt;/li&gt;
+&lt;li&gt;Never hold the oil pump in a vise or any other device that can damage the oil pump's body, because  kneading can cause locking of the internal gears or rotors;&lt;/li&gt;
+&lt;li&gt;Check that the oil pump does not have any kneaded nor scratched areas caused by falls or hits, or oxidation (rust) caused by storage failure;&lt;/li&gt;
+&lt;li&gt;Make sure the oil pump spins freely and has not sucked some dirt during handling;&lt;/li&gt;
+&lt;li&gt;Make sure the pan is not kneaded in the region of the suction tube that could block the oil throughput or force the oil pump;&lt;/li&gt;
+&lt;li&gt;Only install the oil pump after perfect cleaning of the lubrication system, because any impurity may lock oil pump rotors or gears, clog the suction tube screen or lock the overflow valve;&lt;/li&gt;
+&lt;li&gt;Always use the oil as recommended by the engine manufacturer;&lt;/li&gt;
+&lt;li&gt;Load the oil pump and the filter with the same oil that will be used in the engine;&lt;/li&gt;
+&lt;li&gt;Only use the gaskets, O-rings, screws, transfer tubes, etc. that come with the product in the packaging;&lt;/li&gt;
+&lt;li&gt;For gear driven oil pumps, check after assembly if they have the required free movement;&lt;/li&gt;
+&lt;li&gt;For groove driven pumps, check after assembly if the axial movement is free;&lt;/li&gt;
+&lt;li&gt;For pumps driven by the crankshaft, check for signs of wear on the dragging corners of the crankshaft's end. If there is any wear, it will be necessary to restore the worn area, to avoid oil pump locking and the consequent breakage of internal rotors. If the crankshaft is rectified, make sure that the hard layer (tempered) was not jeopardized (low hardness). If the hardness is low, a nitriding process treatment is recommended;&lt;/li&gt;
+&lt;li&gt;Tighten the oil pump screws alternately and at the correct torque;&lt;/li&gt;
+&lt;li&gt;Make sure that the flange surface of the suction tube is not with any damage, irregularity or out of flatness which may allow air entry. If the pump pulls air together with the oil, it will become foamy, oil pressure and engine lubrication will be jeopardized.&lt;/li&gt;
+&lt;li&gt;For proper maintenance of the lubrication system, it is also recommended to replace the suction tube, oil filter and relief valve (if not part of the oil pump) whenever replacing the oil pump.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="oilpump-warrantycertificate" xml:space="preserve">
+    <value>&lt;p&gt;METALÚRGICA SCHADEK LTDA certifies to the final consumer to be offering a product of the highest quality, in perfect condition and adequate for the purposes intended. Any manufacturing defect may be complained within ninety (90) days from the date of application of the product in the engine (under the law no. 8.078, September 11, 1990).&lt;/p&gt;
+&lt;p&gt;The trust SCHADEK has in the quality of its products allows also granting, besides the legal warranty, additional coverage, extending the period provided by law to up to one hundred eighty (180) days or ten thousand (10,000) kilometers, whichever occurs first, against any manufacturing defects.&lt;/p&gt;
+&lt;p&gt;The product must be sent to Metalúrgica Schadek Ltda., by prepaid freight, accompanied by the shipment guarantee invoice (complying with the information contained on that purchase invoice, such as price and taxes). As soon as received by SCHADEK, it will be evaluated technically.&lt;/p&gt;
+&lt;p&gt;If the following is confirmed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MANUFACTURING DEFECT: The product will be replaced with a new one, when retained in the company, and kept in stock for 10 days, after which it should be scrapped.&lt;/li&gt;
+&lt;li&gt;NO DEFECT OF MANUFACTURE: Will be returned in the state in which it is, and if replaced, it will be kept in stock for 10 days, and then scrapped.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="text-uppercase contrast"&gt;THE WARRANTY CEASES IN THE FOLLOWING CASES:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On application, installation, handling, use, improper or incorrect maintenance, performed by unqualified person without the appropriate equipment.&lt;/li&gt;
+&lt;li&gt;Violation of the product, signs of damage, if it presents kneading or breakage.&lt;/li&gt;
+&lt;li&gt;Failure to follow assembly instructions.&lt;/li&gt;
+&lt;li&gt;Product deterioration occurred by unsuitable oils, out of specifications by the engine manufacturer, contaminated, mixed, oxidized or aged.&lt;/li&gt;
+&lt;li&gt;If the Manufacturing Order number engraved on the product is adulterated.&lt;/li&gt;
+&lt;li&gt;If their defect is not due to manufacturing, but rather due to poor fitting on the engine or due to natural wear of the product.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Recomendações" xml:space="preserve">
+    <value>RECOMMENDATION</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>WARRANTY</value>
+  </data>
+  <data name="waterpump-recommendation" xml:space="preserve">
+    <value>&lt;p&gt;Properly installing Schadek products guarantees performance for customers and gives you peace of mind. Remember: Failure to follow the installation instructions below will void any responsibility for damages to the water pump or engine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Completely drain the cooling system;&lt;/li&gt;
+&lt;li&gt;After removing the water pump, clean the cooling system with clean water in order to remove scale and rust;&lt;/li&gt;
+&lt;li&gt;Clean the rotor cavity and the seating surface of the water pump in the engine block or counter piece;&lt;/li&gt;
+&lt;li&gt;Only use the gaskets, O-rings, screws, transfer tubes, etc. that come with the product in the packaging, without using glue or silicone. In cases where no gaskets or rings are applied, apply the minimum necessary sealant;&lt;/li&gt;
+&lt;li&gt;Only install the water pump after perfect cleaning of the cooling system, for any impurity can damage the water pump seal, causing leakage of coolant;&lt;/li&gt;
+&lt;li&gt;Check that the water pump does not have any kneaded nor scratched areas caused by falls or hits, or oxidation (rust) caused by storage failure;&lt;/li&gt;
+&lt;li&gt;Tighten the water pump screws alternately and at the correct torque;&lt;/li&gt;
+&lt;li&gt;Check that the water pump is spinning freely;&lt;/li&gt;
+&lt;li&gt;Prepare the coolant with distilled or demineralized water and additive in proportion and specification specified by the engine manufacturer;&lt;/li&gt;
+&lt;li&gt;Check that the thermostatic valve is not catching and if there are leaks in the cooling system;&lt;/li&gt;
+&lt;li&gt;Check that fan and fan clutch (when used) are not defective;&lt;/li&gt;
+&lt;li&gt;Check that the tensioner and the belt that drives the water pump are in perfect condition, because if the tensioner is too stretched or the belt is damaged, they may damage the water pump pulley and its bearing;&lt;/li&gt;
+&lt;li&gt;For proper maintenance of the cooling system, it is recommended to also replace the belt and tensioner when replacing the water pump.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="waterpump-warrantycertificate" xml:space="preserve">
+    <value>&lt;p&gt;METALÚRGICA SCHADEK LTDA certifies to the final consumer to be offering a product of the highest quality, in perfect condition and adequate for the purposes intended. Any manufacturing defect may be complained within ninety (90) days from the date of application of the product in the engine (under the law no. 8.078, September 11, 1990).&lt;/p&gt;
+&lt;p&gt;The trust SCHADEK has in the quality of its products allows also granting, besides the legal warranty, additional coverage, extending the period provided by law to up to one hundred eighty (180) days or ten thousand (10,000) kilometers, whichever occurs first, against any manufacturing defects.&lt;/p&gt;
+&lt;p&gt;The product must be sent to Metalúrgica Schadek Ltda., by prepaid freight, accompanied by the shipment guarantee invoice (complying with the information contained on that purchase invoice, such as price and taxes). As soon as received by SCHADEK, it will be evaluated technically.&lt;/p&gt;
+&lt;p&gt;If the following is confirmed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MANUFACTURING DEFECT: The product will be replaced with a new one, when retained in the company, and kept in stock for 10 days, after which it should be scrapped.&lt;/li&gt;
+&lt;li&gt;NO DEFECT OF MANUFACTURE: Will be returned in the state in which it is, and if replaced, it will be kept in stock for 10 days, and then scrapped.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="text-uppercase contrast"&gt;THE WARRANTY CEASES IN THE FOLLOWING CASES:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On application, installation, handling, use, improper or incorrect maintenance, performed by unqualified person without the appropriate equipment.&lt;/li&gt;
+&lt;li&gt;Violation of the product, signs of damage, if it presents kneading or breakage.&lt;/li&gt;
+&lt;li&gt;Failure to follow assembly instructions.&lt;/li&gt;
+&lt;li&gt;Product deterioration occurred by unsuitable oils, out of specifications by the engine manufacturer, contaminated, mixed, oxidized or aged.&lt;/li&gt;
+&lt;li&gt;If the Manufacturing Order number engraved on the product is adulterated.&lt;/li&gt;
+&lt;li&gt;If their defect is not due to manufacturing, but rather due to poor fitting on the engine or due to natural wear of the product.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+</root>

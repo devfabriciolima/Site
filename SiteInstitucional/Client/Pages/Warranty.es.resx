@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BOMBAS DE COMBUSTÍVEL" xml:space="preserve">
+    <value>BOMBAS DE COMBUSTIBLE</value>
+  </data>
+  <data name="BOMBAS DE ÓLEO" xml:space="preserve">
+    <value>BOMBAS DE ACEITE</value>
+  </data>
+  <data name="BOMBAS D’ÁGUA" xml:space="preserve">
+    <value>BOMBAS DE AGUA</value>
+  </data>
+  <data name="Certificado de Garantia" xml:space="preserve">
+    <value>CERTIFICADO DE GARANTÍA</value>
+  </data>
+  <data name="fuelpump-recommendation" xml:space="preserve">
+    <value>&lt;p&gt;Aplicar correctamente los productos Schadek es garantía de desempeño para los clientes y tranquilidad para usted. Recuerde: si las instrucciones de montaje que están abajo no se siguen, serán invalidadas todas las eventuales responsabilidades sobre daños causados a la bomba de agua o al motor.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nunca sujete la bomba de combustible en la morsa o en cualquier otro dispositivo que pueda dañar el cuerpo de la bomba, pues la abolladura pode causar el trabamiento de los engranajes o rotores internos;&lt;/li&gt;
+&lt;li&gt;Verifique si la bomba de combustible no posee áreas abolladas o arañadas a causa de caídas o golpes, u óxidos causados por falla en el almacenamiento;&lt;/li&gt;
+&lt;li&gt;Verifique si la bomba de combustible gira libremente y si no succionó alguna suciedad durante la manipulación;&lt;/li&gt;
+&lt;li&gt;Solamente utilice las juntas, anillos de sellado, tornillos, tubos de transferencia, etc., que acompañan el producto en el embalaje;&lt;/li&gt;
+&lt;li&gt;Aprete los tornillos de fijación de la bomba de combustible alternadamente y con el torque correcto;&lt;/li&gt;
+&lt;li&gt;Verifique la estanqueidad del sistema de combustible, para evitar que la bomba de combustible succione aire durante su funcionamiento, y también la pérdida de presión del sistema.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="fuelpump-warrantycertificate" xml:space="preserve">
+    <value>&lt;p&gt;La METALÚRGICA SCHADEK LTDA certifica al consumidor final que está ofreciendo un producto de la más alta calidad, en perfectas condiciones de uso y adecuado a los fines a que se destina. Cualquier defecto de fabricación podrá ser reclamado dentro del plazo de 90 (noventa) días, a partir de la fecha de aplicación del producto en el motor (según la ley nº 8.078 de 11 de septiembre de 1990 - Brasil).&lt;/p&gt;
+&lt;p&gt;La confianza que SCHADEK tiene en la calidad de sus productos permite conceder, además, de forma concomitante a la garantía legal, una cobertura adicional, extendiendo el plazo previsto en la ley hasta 180 (ciento ochenta) días o 10.000 (diez mil) km, lo que ocurra primero, contra eventuales defectos de fabricación.&lt;/p&gt;
+&lt;p&gt;El producto deberá ser enviado a la Metalúrgica Schadek Ltda., con flete pagado y acompañado por la factura de remesa en garantía (esta debe obedecer a las informaciones que están en la factura de compra, como precio e impuestos). Al ser recibido por SCHADEK, será evaluado técnicamente.&lt;/p&gt;
+&lt;p&gt;Si se constata:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DEFECTO DE FABRICACIÓN: El producto será reemplazado por uno nuevo; cuando se retenga en la empresa, y se mantenga en stock por 10 días, siendo que después de este plazo debe ser desechado.&lt;/li&gt;
+&lt;li&gt;NINGÚN DEFECTO DE FABRICACIÓN: Será devuelto en el estado en que se encuentra y, si hay reposición, será mantenido en stock por 10 días; después, será desechado.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="text-uppercase contrast"&gt;LA GARANTÍA PIERDE LA VALIDEZ EN LOS SIGUIENTES CASOS:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;En la aplicación, instalación, manipulación, uso, mantenimiento inadecuado o incorrecto, realizado por una persona que no sea habilitada y sin el auxilio de equipos apropiados.&lt;/li&gt;
+&lt;li&gt;Apertura brusca del producto, señales de daños, presentarse abollado o roto.&lt;/li&gt;
+&lt;li&gt;Si no se observan las instrucciones de montaje.&lt;/li&gt;
+&lt;li&gt;Deterioro del producto que ocurra porque no se utilizó agua destilada o desmineralizada o por uso de aditivo en la proporción y especificación fuera de lo indicado por el fabricante del motor.&lt;/li&gt;
+&lt;li&gt;Si el número de la Orden de Fabricación grabada en el producto es adulterado.&lt;/li&gt;
+&lt;li&gt;Si el defecto presentado no es de fabricación, sino que fue causado por el montaje deficiente en el motor o por el desgaste natural del producto.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Garantia" xml:space="preserve">
+    <value>GARANTÍA</value>
+  </data>
+  <data name="Garantimos nossos produtos como livres de defeitos de materiais e fabricação durante o prazo de 90 (noventa) dias por força de lei, acrescido de 90 (noventa) dias adicionais concedidos pela Schadek, perfazendo um total de 180 (cento e oitenta) dias ou 10 mil Km, prevalecendo o que ocorrer primeiro. O prazo de garantia começa a contar a partir da data da emissão Nota Fiscal de venda ao consumidor final. As solicitações de garantia serão atendidas após análise detalhada da peça, realização de testes e emissão de laudo técnico. Verifique atentamente as instruções de instalação e condições de garantia para cada produto Schadek." xml:space="preserve">
+    <value>Schadek ofrece garantía de 6 meses de uso o 10 mil km para defectos de fabricación de sus productos. Las solicitudes de garantía son atendidas después de un análisis detallado de la pieza, realización de pruebas y emisión de informes técnicos.
+Verifique atentamente las instrucciones de instalación y condiciones de garantía para cada producto Schadek.</value>
+  </data>
+  <data name="oilpump-recommendation" xml:space="preserve">
+    <value>&lt;p&gt;Aplicar correctamente los productos Schadek es garantía de desempeño para los clientes y tranquilidad para usted. Recuerde: si las instrucciones de montaje que están abajo no se siguen, serán invalidadas todas las eventuales responsabilidades sobre daños causados a la bomba de agua o al motor.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tenga mucho cuidado al manipular bombas de aceite que posean retén. Los labios internos del retén no deben ser tocados, pues si se abollan, el retén no hará el sellado necesario, ocurriendo escape de aceite;&lt;/li&gt;
+&lt;li&gt;Nunca sujete la bomba de aceite en la morsa o cualquier otro dispositivo que pueda dañar el cuerpo de la bomba de aceite, pues la abolladura puede causar el trabamiento de los engranajes o rotores internos;&lt;/li&gt;
+&lt;li&gt;Verifique si la bomba de aceite no posee áreas abolladas o arañadas a causa de caídas o golpes, u óxidos causados por falla en el almacenamiento;&lt;/li&gt;
+&lt;li&gt;Verifique si la bomba de aceite gira libremente y si no aspiró alguna suciedad durante la manipulación;&lt;/li&gt;
+&lt;li&gt;Verifique si el cárter no está abollado en la región del tubo de succión, obstruyendo el paso de aceite o forzando la bomba de aceite;&lt;/li&gt;
+&lt;li&gt;Solamente instale la bomba de aceite después de la perfecta limpieza del sistema de lubricación, pues cualquier impureza podrá trabar los rotores o engranajes de la bomba de aceite, tapar la tela del tubo de succión o trabar la válvula de alivio;&lt;/li&gt;
+&lt;li&gt;Utilice siempre el aceite recomendado por el fabricante del motor;&lt;/li&gt;
+&lt;li&gt;Cargue el filtro y la bomba de aceite con el mismo aceite que será utilizado en el motor;&lt;/li&gt;
+&lt;li&gt;Solamente utilice las juntas, anillos de sellado, tornillos, tubos de transferencia, etc., que acompañan el producto en el embalaje;&lt;/li&gt;
+&lt;li&gt;Para bombas de aceite accionadas por engranaje, verifique después del montaje si poseen el movimiento libre necesario;&lt;/li&gt;
+&lt;li&gt;Para bombas accionadas por ranura, verifique después del montaje si el movimiento axial está libre;&lt;/li&gt;
+&lt;li&gt;Para bombas accionadas por el cigüeñal, verifique si hay señales de desgaste en las esquinas de arrastre de la punta del cigüeñal. Si hay desgaste, será necesario hacer la recuperación del área desgastada, para evitar el trabamiento de la bomba de aceite y la consecuente quiebra de los rotores internos. Si el cigüeñal es recuperado, asegúrese de que la capa dura (templada) no quedó perjudicada (baja dureza). Si la dureza está baja, se recomienda hacer un tratamiento por el proceso de Nitruración;&lt;/li&gt;
+&lt;li&gt;Aprete los tornillos de fijación de la bomba de aceite alternadamente y con el torque correcto;&lt;/li&gt;
+&lt;li&gt;Asegúrese de que la superficie de la brida del tubo de succión no tenga ningún aspecto de golpe, irregularidad o ausencia de planicidad que puedan permitir la entrada de aire. Si la bomba succiona aire junto con el aceite, él quedará con espuma, la presión del aceite y la lubricación del motor quedarán perjudicadas.&lt;/li&gt;
+&lt;li&gt;Para el perfecto mantenimiento del sistema de lubricación, se recomienda reemplazar también el tubo de succión, filtro de aceite y válvula de alivio (cuando no forme parte de la bomba de aceite) siempre que reemplace la bomba de aceite.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="oilpump-warrantycertificate" xml:space="preserve">
+    <value>&lt;p&gt;La METALÚRGICA SCHADEK LTDA certifica al consumidor final que está ofreciendo un producto de la más alta calidad, en perfectas condiciones de uso y adecuado a los fines a que se destina. Cualquier defecto de fabricación podrá ser reclamado dentro del plazo de 90 (noventa) días, a partir de la fecha de aplicación del producto en el motor (según la ley nº 8.078 de 11 de septiembre de 1990 - Brasil).&lt;/p&gt;
+&lt;p&gt;La confianza que SCHADEK tiene en la calidad de sus productos permite conceder, además, de forma concomitante a la garantía legal, una cobertura adicional, extendiendo el plazo previsto en la ley hasta 180 (ciento ochenta) días o 10.000 (diez mil) km, lo que ocurra primero, contra eventuales defectos de fabricación.&lt;/p&gt;
+&lt;p&gt;El producto deberá ser enviado a la Metalúrgica Schadek Ltda., con flete pagado y acompañado por la factura de remesa en garantía (esta debe obedecer a las informaciones que están en la factura de compra, como precio e impuestos). Al ser recibido por SCHADEK, será evaluado técnicamente.&lt;/p&gt;
+&lt;p&gt;Si se constata:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DEFECTO DE FABRICACIÓN: El producto será reemplazado por uno nuevo; cuando se retenga en la empresa, y se mantenga en stock por 10 días, siendo que después de este plazo debe ser desechado.&lt;/li&gt;
+&lt;li&gt;NINGÚN DEFECTO DE FABRICACIÓN: Será devuelto en el estado en que se encuentra y, si hay reposición, será mantenido en stock por 10 días; después, será desechado.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="text-uppercase contrast"&gt;LA GARANTÍA PIERDE LA VALIDEZ EN LOS SIGUIENTES CASOS:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;En la aplicación, instalación, manipulación, uso, mantenimiento inadecuado o incorrecto, realizado por una persona que no sea habilitada y sin el auxilio de equipos apropiados.&lt;/li&gt;
+&lt;li&gt;Apertura brusca del producto, señales de daños, presentarse abollado o roto.&lt;/li&gt;
+&lt;li&gt;Si no se observan las instrucciones de montaje.&lt;/li&gt;
+&lt;li&gt;Deterioro del producto que ocurra porque no se utilizó agua destilada o desmineralizada o por uso de aditivo en la proporción y especificación fuera de lo indicado por el fabricante del motor.&lt;/li&gt;
+&lt;li&gt;Si el número de la Orden de Fabricación grabada en el producto es adulterado.&lt;/li&gt;
+&lt;li&gt;Si el defecto presentado no es de fabricación, sino que fue causado por el montaje deficiente en el motor o por el desgaste natural del producto.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Recomendações" xml:space="preserve">
+    <value>RECOMENDACIONES</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>GARANTÍA</value>
+  </data>
+  <data name="waterpump-recommendation" xml:space="preserve">
+    <value>&lt;p&gt;Aplicar correctamente los productos Schadek es garantía de desempeño para los clientes y tranquilidad para usted. Recuerde: si las instrucciones de montaje que están abajo no se siguen, serán invalidadas todas las eventuales responsabilidades sobre daños causados a la bomba de agua o al motor.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Drene completamente el sistema de refrigeración;&lt;/li&gt;
+&lt;li&gt;Después de remover la bomba de agua, limpie el sistema de refrigeración con agua corriente, para remover incrustaciones y óxido;&lt;/li&gt;
+&lt;li&gt;Limpie la cavidad del rotor y la superficie de asentamiento de la bomba de agua en el bloque del motor o en la contrapieza;&lt;/li&gt;
+&lt;li&gt;Utilice las juntas o anillos de sellado, que acompañan el producto en el embalaje, sin utilizar pegamento o silicona. En los casos donde no son aplicados junta o anillo, aplique lo mínimo necesario de junta química;&lt;/li&gt;
+&lt;li&gt;Solamente instale la bomba de agua después de la perfecta limpieza del sistema de refrigeración, pues cualquier impureza podrá dañar el sello de la bomba de agua, causando escape del líquido de refrigeración;&lt;/li&gt;
+&lt;li&gt;Verifique si la bomba de agua no posee áreas abolladas o arañadas a causa de caídas o golpes, u óxidos causados por falla en el almacenamiento;&lt;/li&gt;
+&lt;li&gt;Aprete los tornillos de fijación de la bomba de agua alternadamente y con el torque correcto;&lt;/li&gt;
+&lt;li&gt;Verifique si la bomba de agua está girando libremente;&lt;/li&gt;
+&lt;li&gt;Prepare la solución del líquido de refrigeración con agua destilada o desmineralizada y aditivo en la proporción y especificación indicada por el fabricante del motor;&lt;/li&gt;
+&lt;li&gt;Verifique si la válvula termostática no se está trabando y si existen escapes en el sistema de refrigeración;&lt;/li&gt;
+&lt;li&gt;Verifique si el ventilador y el embrague del ventilador (cuando se utiliza) no presentan defectos;&lt;/li&gt;
+&lt;li&gt;Verifique si el tensor y la correa que acciona la bomba de agua están en perfecto estado de funcionamiento, pues si el tensor está muy estirado y la correa se daña, se podrá dañar la polea de la bomba de agua y su rodamiento;&lt;/li&gt;
+&lt;li&gt;Para el perfecto mantenimiento del sistema de refrigeración, se recomienda reemplazar también la correa y el tensor siempre que se reemplace la bomba de agua.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="waterpump-warrantycertificate" xml:space="preserve">
+    <value>&lt;p&gt;La METALÚRGICA SCHADEK LTDA certifica al consumidor final que está ofreciendo un producto de la más alta calidad, en perfectas condiciones de uso y adecuado a los fines a que se destina. Cualquier defecto de fabricación podrá ser reclamado dentro del plazo de 90 (noventa) días, a partir de la fecha de aplicación del producto en el motor (según la ley nº 8.078 de 11 de septiembre de 1990 - Brasil).&lt;/p&gt;
+&lt;p&gt;La confianza que SCHADEK tiene en la calidad de sus productos permite conceder, además, de forma concomitante a la garantía legal, una cobertura adicional, extendiendo el plazo previsto en la ley hasta 180 (ciento ochenta) días o 10.000 (diez mil) km, lo que ocurra primero, contra eventuales defectos de fabricación.&lt;/p&gt;
+&lt;p&gt;El producto deberá ser enviado a la Metalúrgica Schadek Ltda., con flete pagado y acompañado por la factura de remesa en garantía (esta debe obedecer a las informaciones que están en la factura de compra, como precio e impuestos). Al ser recibido por SCHADEK, será evaluado técnicamente.&lt;/p&gt;
+&lt;p&gt;Si se constata:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DEFECTO DE FABRICACIÓN: El producto será reemplazado por uno nuevo; cuando se retenga en la empresa, y se mantenga en stock por 10 días, siendo que después de este plazo debe ser desechado.&lt;/li&gt;
+&lt;li&gt;NINGÚN DEFECTO DE FABRICACIÓN: Será devuelto en el estado en que se encuentra y, si hay reposición, será mantenido en stock por 10 días; después, será desechado.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="text-uppercase contrast"&gt;LA GARANTÍA PIERDE LA VALIDEZ EN LOS SIGUIENTES CASOS:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;En la aplicación, instalación, manipulación, uso, mantenimiento inadecuado o incorrecto, realizado por una persona que no sea habilitada y sin el auxilio de equipos apropiados.&lt;/li&gt;
+&lt;li&gt;Apertura brusca del producto, señales de daños, presentarse abollado o roto.&lt;/li&gt;
+&lt;li&gt;Si no se observan las instrucciones de montaje.&lt;/li&gt;
+&lt;li&gt;Deterioro del producto que ocurra porque no se utilizó agua destilada o desmineralizada o por uso de aditivo en la proporción y especificación fuera de lo indicado por el fabricante del motor.&lt;/li&gt;
+&lt;li&gt;Si el número de la Orden de Fabricación grabada en el producto es adulterado.&lt;/li&gt;
+&lt;li&gt;Si el defecto presentado no es de fabricación, sino que fue causado por el montaje deficiente en el motor o por el desgaste natural del producto.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+</root>

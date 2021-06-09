@@ -1,0 +1,72 @@
+﻿@page "/ProductList"
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<ProductsList> Localizer
+
+<CatalogSearch IsProductListPage="@true" CssClass="pt-4" />
+
+<div class="container cor-cinza mt-4 mb-4">
+    @if (_products != null && _products.Length > 0)
+    {
+        <div class="row title text-uppercase">
+            <div class="col-12">
+                <h1>@_products.Length @Localizer["RESULTADO(S) PARA BUSCA POR APLICAÇÃO DE:"]</h1>
+            </div>
+            <div class="col-12 cor-laranja">
+                <h3>@SearchParamsPath</h3>
+            </div>
+        </div>
+        <div class="row product-list">
+            <div class="col-12">
+                @foreach (var product in _products)
+                {
+                    <div class="row product py-3">
+                        <div class="col-3 col-md-1 align-self-end">
+                            <button class="btn" @onclick="@(e => ViewImage(product))">
+                                <i class="fa fa-search fa-2x cor-cinza" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="/api/static/products-images/@product.Code/thumbnail" />
+                        </div>
+                        <div class="col-8 col-md-7 align-self-center">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span>@product.Name</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-4 product-code">
+                                    <h2>@product.Code</h2>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <h2>@product.OldCode</h2><small>(@Localizer["cód. antigo"])</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2 align-self-center">
+                            <button class="btn btn-schadek btn-block text-uppercase p-1"
+                                    @onclick="@(e => DetailProduct(product))">
+                                @Localizer["Detalhes"]
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <Modal @ref="_modalRef">
+            <ModalBackdrop />
+            <ModalContent IsCentered="true">
+                <ModalBody>
+                    <img src="@_imageUri" class="w-100" />
+                </ModalBody>
+            </ModalContent>
+        </Modal>
+    }
+    else
+    {
+        <div class="alert alert-warning" role="alert">
+            @Localizer["Nenhum produto encontrado."]
+        </div>
+    }
+</div>

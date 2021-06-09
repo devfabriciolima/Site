@@ -1,0 +1,24 @@
+﻿@using Microsoft.Extensions.Localization
+@using SiteInstitucional.Client.Pages.Catalog
+
+@inject IStringLocalizerFactory LocalizerFactory
+
+<div class="jumbotron mb-0 pb-5 d-none d-md-block" style="background-image: url(../img/page-headers/@ImageName)">
+    <div>
+        <h1 class="display-4 cor-laranja text-uppercase ml-5 text-shadow">@_localizer["title"]</h1>
+    </div>
+</div>
+
+<CatalogSearch />
+
+@code {
+    [Parameter]
+    public Type PageType { get; set; }
+    [Parameter]
+    public string ImageName { get; set; }
+    private IStringLocalizer _localizer;
+    protected override void OnInitialized()
+    {
+        _localizer = LocalizerFactory.Create(PageType);
+    }
+}

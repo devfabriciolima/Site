@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="+ 1.200.000" xml:space="preserve">
+    <value>+ 1.200.000</value>
+  </data>
+  <data name="1.000.000" xml:space="preserve">
+    <value>1.000.000</value>
+  </data>
+  <data name="100" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="100%" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="160" xml:space="preserve">
+    <value>160</value>
+  </data>
+  <data name="24 A 48" xml:space="preserve">
+    <value>24 A 48</value>
+  </data>
+  <data name="3.000.000" xml:space="preserve">
+    <value>3.000.000</value>
+  </data>
+  <data name="5.000.000" xml:space="preserve">
+    <value>5.000.000</value>
+  </data>
+  <data name="A ferramentaria Schadek destaca-se pela qualidade e precisão dos moldes, dispositivos e ferramentais utilizados na produção dos componentes e montagem final de cada produto." xml:space="preserve">
+    <value>La fabricación de herramientas de Schadek se destaca por la calidad y precisión de los moldes, dispositivos e instrumentos utilizados en la producción de los componentes y montaje final de cada producto.</value>
+  </data>
+  <data name="A Schadek trabalha com 60 dias de disponibilidade de todos os itens do seu portfólio no estoque. Isso garante que os pedidos colocados na fábrica sejam liberados no prazo mínimo de 24 horas para a transportadora. Além disso, a Schadek oferece frete CIF para entregas em todo o Brasil." xml:space="preserve">
+    <value>Schadek trabaja con 60 días de disponibilidad de todos los ítems de su portafolio en el stock. Esto garantiza que los pedidos colocados en la fábrica sean liberados en el plazo mínimo de 24 horas a la transportadora. Además, Schadek ofrece flete CIF para entregas en cualquier lugar de Brasil.</value>
+  </data>
+  <data name="BOMBAS AUTOMOTIVAS PRODUZIDAS NOS ÚLTIMOS 10 ANOS" xml:space="preserve">
+    <value>BOMBAS AUTOMOTRICES PRODUCIDAS EN LOS ÚLTIMOS 10 AÑOS</value>
+  </data>
+  <data name="Com a integração de todas as aplicações e processos, inteligência analítica, mobilidade e controles da organização no moderno sistema SAP, a Schadek ganha mais agilidade e segurança na tomada de decisões - do desenvolvimento de um novo produto à satisfação do cliente. Com uma solução consolidada, robusta e expansível, a Schadek atinge um novo patamar tecnológico para suportar seus novos desafios." xml:space="preserve">
+    <value>Con la integración de todas las aplicaciones y procesos, inteligencia analítica, movilidad y controles de la organización en el moderno sistema SAP, Schadek gana más agilidad y seguridad en la toma de decisiones - del desarrollo de un nuevo producto a la satisfacción del cliente. Con una solución consolidada, robusta y expansible, Schadek alcanza un nuevo nivel tecnológico para soportar sus nuevos desafíos.</value>
+  </data>
+  <data name="Concentração e controle de qualidade total na montagem dos produtos são um dos principais diferenciais Schadek." xml:space="preserve">
+    <value>Concentración y control de calidad total en el montaje de los productos son algunas de las principales ventajas de Schadek.</value>
+  </data>
+  <data name="DE COMPONENTES UTILIZADOS NA MONTAGEM/MÊS" xml:space="preserve">
+    <value>DE COMPONENTES UTILIZADOS EN EL MONTAJE/MES</value>
+  </data>
+  <data name="DE PEÇAS USINADAS/MÊS" xml:space="preserve">
+    <value>DE PIEZAS MECANIZADAS/MES</value>
+  </data>
+  <data name="FERRAMENTAIS/MÊS" xml:space="preserve">
+    <value>HERRAMIENTAS/MES</value>
+  </data>
+  <data name="HORAS PARA LIBERAÇÃO DE PEDIDOS" xml:space="preserve">
+    <value>HORAS PARA LIBERACIÓN DE PEDIDOS</value>
+  </data>
+  <data name="INVESTIDOS NA IMPLANTAÇÃO DO SAP" xml:space="preserve">
+    <value>INVERTIDOS EN LA IMPLANTACIÓN DEL SAP</value>
+  </data>
+  <data name="Numa das maiores áreas da fábrica, modernos centros de usinagem Heller e Robodrill, fresadoras Mitsubishi, tornos Index com alta capacidade e versatilidade de produção, dão forma a componentes como carcaças, eixos, engrenagens, válvulas e muitos outros que integram nosso completo portfólio de bombas automotivas. São mais de 200 máquinas responsáveis pela produção de cerca de 500 itens do nosso catálogo." xml:space="preserve">
+    <value>En una de las mayores áreas de la fábrica, modernos centros de mecanización Heller y Robodrill, fresadoras Mitsubishi, tornos Index con alta capacidad y versatilidad de producción, dan forma a componentes como carcasas, ejes, engranajes, válvulas y muchos otros que integran nuestro completo portafolio de bombas automotrices. Son más de 200 máquinas responsables de la producción de alrededor de 500 ítems de nuestro catálogo.</value>
+  </data>
+  <data name="QUALIDADE" xml:space="preserve">
+    <value>CALIDAD</value>
+  </data>
+  <data name="R$" xml:space="preserve">
+    <value>R$</value>
+  </data>
+  <data name="Recém-instalada em nova área e com novas células de injeção Buhler, a fundição Schadek ocupa 5.200 m2 e tem capacidade de processar 160 toneladas de alumínio/mês, produzindo até 210.000 componentes mensais." xml:space="preserve">
+    <value>Recién instalada en nueva área y con nuevas células de inyección Buhler, la fundición Schadek ocupa 5.200 m2 y tiene capacidad de procesar 160 toneladas de aluminio/mes, produciendo hasta 210.000 componentes mensuales.</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>NUESTRA
+FÁBRICA</value>
+  </data>
+  <data name="Todos os padrões de qualidade definidos no início do processo de desenvolvimento são aplicados e verificados com rigor em todas as fases de produção." xml:space="preserve">
+    <value>Todos los estándares de calidad definidos al principio del proceso de desarrollo son aplicados y verificados con rigor en todas las fases de producción.</value>
+  </data>
+  <data name="TONELADAS DE ALUMÍNIO PROCESSADAS/MÊS" xml:space="preserve">
+    <value>TONELADAS DE ALUMINIO PROCESADAS/MES</value>
+  </data>
+  <data name="Uma estrutura fabril completa, equipada com máquinas de última geração e processos produtivos controlados, garante a excelência Schadek." xml:space="preserve">
+    <value>Una estructura fabril completa, equipada con máquinas de última generación y procesos productivos controlados, garantiza la excelencia Schadek.</value>
+  </data>
+</root>

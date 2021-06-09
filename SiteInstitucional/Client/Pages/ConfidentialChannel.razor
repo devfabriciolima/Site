@@ -1,0 +1,100 @@
+﻿@page "/ConfidentialChannel"
+
+@using SiteInstitucional.Shared
+@using SiteInstitucional.Shared.Domain
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<ConfidentialChannel> Localizer
+
+<PageHeader PageType="@typeof(ConfidentialChannel)" ImageName="confidential-channel.jpg" />
+
+<div class="container-fluid confidential-info cor-preto">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 col-md-6 p-4">
+                <h4 class="text-uppercase title">@Localizer["INFORMAÇÕES AO DENUNCIANTE"]</h4>
+                <h5 class="text-uppercase title">@Localizer["PROTEÇÃO AO DENUNCIANTE"]</h5>
+                <p class="text text-justify">
+                    @Localizer["A Schadek Automotive preza pela confidencialidade e sigilo das denúncias recebidas, não tolerando assédios ou ameaças aos denunciantes que utilizam seus canais oficiais. Será empregado todo o esforço para que as informações recebidas e a identidade do denunciante mantenham-se confidenciais."]
+                </p>
+                <h5 class="text-uppercase title">@Localizer["DENÚNCIAS ANÔNIMAS"]</h5>
+                <p class="text text-justify">
+                    @Localizer["O denunciante poderá enviar as informações anonimamente, sendo o envio irrastreável. Se for desejo do denunciante a sua identificação, ela somente acontecerá após avaliação em eventuais investigações."]
+                </p>
+                <p class="text text-justify">
+                    @Localizer["Os critérios que determinam a realização de investigações são avaliados a partir da gravidade, credibilidade e razoabilidade das informações recebidas."]
+                </p>
+            </div>
+            <div class="col-12 offset-md-1 col-md-5 p-4 mt-3 mt-md-0 align-self-center">
+                <p class="text text-justify">
+                    @Localizer["A Schadek Automotive disponibiliza um canal de comunicação confidencial, destinado a seus funcionários, terceiros contratados, fornecedores e clientes, para que possam relatar denúncias envolvendo suas atividades. Ao disponibilizar esse canal confidencial, a Schadek Automotive reforça seu compromisso com os mais altos padrões de conduta ética e moral no mercado, fato reconhecido por seus clientes, colaboradores e fornecedores."]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid cor-fundo-cinza-medio">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12 col-md-8 contact-form">
+                <Loading IsLoading="_sendingMessage">
+                    <EditForm Model="@_model" OnValidSubmit="@SendMail">
+                        <DataAnnotationsValidator />
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="name">@Localizer["NOME"] (@Localizer["NÃO OBRIGATÓRIO"])</label>
+                                    <InputText @bind-Value="_model.Name" class="form-control form-control-sm" id="name" DisplayName="@Localizer["NOME"]" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="mail">@Localizer["EMAIL"] (@Localizer["NÃO OBRIGATÓRIO"])</label>
+                                    <InputText @bind-Value="_model.Mail" class="form-control form-control-sm" id="mail" DisplayName="@Localizer["EMAIL"]" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subject">@Localizer["ASSUNTO"]</label>
+                                    <InputSelect @bind-Value="_model.Subject" class="custom-select" id="subject">
+                                        @foreach (var subject in Enum.GetValues<ConfidentialChannelSubject>())
+                                        {
+                                            <option value="@subject">@Localizer[subject.GetEnumDescription()]</option>
+                                        }
+                                    </InputSelect>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message">@Localizer["SUA MENSAGEM"]</label>
+                                    <InputTextArea @bind-Value="_model.Message"
+                                                   DisplayName="@Localizer["SUA MENSAGEM"]"
+                                                   class="form-control form-control-sm"
+                                                   id="message"
+                                                   rows="6" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 col-md-3">
+                                <button type="submit" class="btn btn-schadek btn-block text-uppercase p-0">
+                                    @Localizer["ENVIAR"]
+                                </button>
+                            </div>
+                        </div>
+                    </EditForm>
+                </Loading>
+            </div>
+        </div>
+    </div>
+</div>
+
+<MessageModal @ref="_messageModal" />

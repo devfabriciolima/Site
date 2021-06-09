@@ -1,0 +1,199 @@
+﻿@page "/Contact"
+
+@using SiteInstitucional.Shared
+@using SiteInstitucional.Shared.Domain
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<Contact> Localizer
+
+<PageHeader PageType="@typeof(Contact)" ImageName="contact.jpg" />
+
+<div class="container-fluid contact cor-cinza py-5">
+    <div class="container">
+        <div class="row cor-branco">
+            <div class="col-12 col-md-6">
+                <p class="text mt-3 mb-1">
+                    @Localizer["Nossa Assistência Técnica oferece suporte total aos clientes, esclarecendo dúvidas e fornecendo informações sobre o funcionamento e a correta instalação de todo nosso portfólio de bombas de água, óleo e combustível."]
+                </p>
+                <p class="text mt-1 mb-3">
+                    @Localizer["Palestras técnicas periódicas e materiais informativos também colaboram para o desenvolvimento dos profissionais e fortalecem ainda mais nossa parceria com os mecânicos."]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid cor-fundo-cinza-medio">
+    <div class="container">
+        <div class="row pt-4 cor-laranja">
+            <div class="col-12">
+                <h4 class="text-uppercase title">@Localizer["FALE CONOSCO"]</h4>
+            </div>
+        </div>
+        <div class="row phones pb-4">
+            <div class="col-12 col-md-6">
+                <div class="p-2 text-center text-md-left">
+                    <img src="@Localizer["img/icon-phone.png"]" class="px-1" />
+                    <h5 class="d-inline align-middle text-uppercase title cor-branco">@Localizer["CENTRAL DE ATENDIMENTO"]</h5>
+                    <h4 class="d-block d-md-inline align-middle float-md-right text cor-laranja">@((MarkupString) Localizer["0800 775 0302"].Value)</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 px-md-0 pt-3 pt-md-0">
+                <div class="p-2 text-center text-md-left">
+                    <img src="img/icon-whatsapp.png" class="px-1" />
+                    <h5 class="d-inline align-middle text-uppercase title cor-branco">@Localizer["DÚVIDAS TÉCNICAS"]</h5>
+                    <h4 class="d-block d-md-inline align-middle float-md-right text cor-laranja">@Localizer["15 99677-4204"]</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-12 col-md-6 contact-form">
+                <Loading IsLoading="_sendingMessage">
+                    <EditForm Model="@_model" OnValidSubmit="@SendMail">
+                        <DataAnnotationsValidator />
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="name">@Localizer["Nome"]</label>
+                                    <InputText @bind-Value="_model.Name" class="form-control form-control-sm" id="name" DisplayName="@Localizer["Nome"]" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="address">@Localizer["Endereço"]</label>
+                                    <InputText @bind-Value="_model.Address" class="form-control form-control-sm" id="address" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="postalCode">@Localizer["CEP"]</label>
+                                    <InputText @bind-Value="_model.PostalCode" class="form-control form-control-sm" id="postalCode" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="neighborhood">@Localizer["Bairro"]</label>
+                                    <InputText @bind-Value="_model.Neighborhood" class="form-control form-control-sm" id="neighborhood" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="city">@Localizer["Cidade"]</label>
+                                    <InputText @bind-Value="_model.City" class="form-control form-control-sm" id="city" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="state">@Localizer["Estado"]</label>
+                                    <InputText @bind-Value="_model.State" class="form-control form-control-sm" id="state" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="phone">@Localizer["Telefone"]</label>
+                                    <InputText @bind-Value="_model.Phone" class="form-control form-control-sm" id="phone" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="mail">@Localizer["Email"]</label>
+                                    <InputText @bind-Value="_model.Mail" class="form-control form-control-sm" id="mail" DisplayName="@Localizer["Email"]" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subject">@Localizer["Assunto"]</label>
+                                    <InputSelect @bind-Value="_model.Subject.Code" class="custom-select" id="subject">
+                                        @foreach (var subject in _listContactSubject)
+                                        {
+                                            <option value="@subject.Code">@subject.Description</option>
+                                        }
+                                    </InputSelect>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message">@Localizer["Sua mensagem"]</label>
+                                    <InputTextArea @bind-Value="_model.Message"
+                                                   DisplayName="@Localizer["Sua mensagem"]"
+                                                   class="form-control form-control-sm"
+                                                   id="message"
+                                                   rows="4" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 col-md-3">
+                                <button type="submit" class="btn btn-schadek btn-block text-uppercase p-0">
+                                    @Localizer["Enviar"]
+                                </button>
+                            </div>
+                        </div>
+                    </EditForm>
+                </Loading>
+            </div>
+            <div class="col-12 col-md-6 py-3 cor-branco address">
+                <div class="row py-2">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="d-inline text-uppercase title cor-laranja">@Localizer["Endereço"]</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 p-0 text-center align-self-center">
+                                <img src="img/icon-map.png" />
+                            </div>
+                            <div class="col-11 pl-0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text m-0">@Localizer["Rua João Thomaz de Almeida, 900 | 18540-000"]</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text m-0">@Localizer["Porto Feliz | SP | Brasil | +55 (15) 3262-3112"]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1833.3071751757832!2d-47.5098284!3d-23.220721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5fe6e547c5443%3A0x46fd05f8465a0871!2sMetal%C3%BArgica+Schadek+Ltda!5e0!3m2!1spt-BR!2sbr!4v1492021700736"
+                                        width="95%" height="260" frameborder="0" style="border: 0" allowfullscreen class="b-padding-2"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-2 mt-3">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="d-inline text-uppercase title cor-laranja">@Localizer["TRABALHE CONOSCO"]</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text m-0">@Localizer["Se desejar poderá enviar seu curriculum vitae para o e-mail:"]</p>
+                                <p class="text m-0"><a class="cor-branco text-decoration-none" href="mailto:talentos@schadek.com.br">talentos@schadek.com.br</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<MessageModal @ref="_messageModal" />

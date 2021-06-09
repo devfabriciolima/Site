@@ -1,0 +1,106 @@
+﻿nav.navbar {
+    background-color: rgba(47, 42, 49, 0.8);
+    /*height: 40px;*/
+    width: 100%;
+    z-index: 100;
+}
+
+    nav.navbar .navbar-header {
+        background: url(img/header.jpg) no-repeat;
+        background-size: cover;
+        height: var(--nav-header-height);
+    }
+
+    nav.navbar .navbar-collapse {
+        height: var(--nav-menu-height);
+    }
+
+    nav.navbar ul.navbar-nav > li {
+        font-size: 0.9rem;
+        font-family: "Gotham-XLight";
+        font-style: normal;
+        font-weight: 100;
+    }
+
+        nav.navbar ul.navbar-nav > li.nav-item:not(:last-child) {
+            border-right: solid 1px #DB8E18;
+        }
+
+        nav.navbar ul.navbar-nav > li.nav-item ::deep a:hover {
+            color: #DB8E18;
+        }
+
+    nav.navbar ::deep .nav-link, nav.navbar div.btn-group a.btn.btn-link {
+        color: white;
+    }
+
+        nav.navbar ::deep .nav-link.active, nav.navbar div.btn-group a.btn.btn-link:hover {
+            color: #DB8E18;
+        }
+
+
+.duvidas h6 {
+    font-size: 0.8rem;
+    font-family: "Gotham-Black";
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.telefones h4 {
+    font-family: "Gotham-Book";
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: var(--nav-header-height); /* Height of navbar */
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #343a40;
+        transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        height: auto !important;
+    }
+
+        .offcanvas-collapse.open {
+            visibility: visible;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            height: auto !important;
+        }
+
+            .offcanvas-collapse.open ul.navbar-nav {
+                text-align: center !important;
+            }
+
+                .offcanvas-collapse.open ul.navbar-nav > li.nav-item:not(:last-child) {
+                    border: none;
+                }
+
+                .offcanvas-collapse.open ul.navbar-nav > li.nav-item {
+                    padding-top: .25rem !important;
+                    padding-bottom: .25rem !important;
+                }
+
+                .offcanvas-collapse.open ul.navbar-nav > li {
+                    font-size: 1.2rem;
+                }
+
+            .offcanvas-collapse.open .btn-group {
+                width: 100% !important;
+                padding-top: .5rem !important;
+                padding-bottom: .5rem !important;
+            }
+}

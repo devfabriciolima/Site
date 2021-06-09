@@ -1,0 +1,50 @@
+﻿.title {
+    font-family: 'Gotham-Black';
+}
+
+.text {
+    font-family: 'Gotham-Book';
+    font-size: .9em;
+}
+
+.confidential-info {
+    background-image: url(/img/page-headers/confidential-channel-inner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .confidential-info .row > div {
+        border: 2px solid black;
+    }
+
+.contact-form {
+    min-height: 100px;
+}
+
+    .contact-form .form-group {
+        margin-bottom: 0;
+    }
+
+    .contact-form ::deep .form-control,
+    .contact-form ::deep .custom-select {
+        border-radius: 0;
+        border: none;
+        font-size: .9em;
+        font-family: 'Gotham-Book';
+    }
+
+        .contact-form ::deep .form-control.invalid,
+        .contact-form ::deep .custom-select.invalid {
+            border: 2px solid red;
+        }
+
+    .contact-form .form-group label {
+        color: white;
+        margin: 0;
+        font-family: 'Gotham-Book';
+        font-size: .9em;
+    }
+
+    .contact-form .btn-schadek {
+        color: black;
+    }

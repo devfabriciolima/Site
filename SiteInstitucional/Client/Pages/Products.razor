@@ -1,0 +1,450 @@
+﻿@page "/Products"
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<Products> Localizer
+
+<PageHeader PageType="@typeof(Products)" ImageName="products.jpg" />
+
+<div class="container-fluid barra-botoes py-4">
+    <div class="container">
+        <div class="row justify-content-center cor-laranja">
+
+            <div class="col-6 col-md-3 col-lg-2 mx-md-4 my-md-2">
+                <Link To="#waterpump" class="text-decoration-none">
+                <div class="image-container">&nbsp;</div>
+                <h3 class="text-center w-100 cor-laranja mb-0">@Localizer["BOMBAS D'ÁGUA"]</h3>
+                </Link>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mx-md-4 my-md-2">
+                <Link To="#oilpump" class="text-decoration-none">
+                <div class="image-container">&nbsp;</div>
+                <h3 class="text-center w-100 cor-laranja mb-0">@Localizer["BOMBAS DE ÓLEO"]</h3>
+                </Link>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mx-md-4 my-md-2">
+                <Link To="#fuelpump" class="text-decoration-none">
+                <div class="image-container">&nbsp;</div>
+                <h3 class="text-center w-100 cor-laranja mb-0">@Localizer["BOMBAS DE COMBUSTÍVEL"]</h3>
+                </Link>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mx-md-4 my-md-2">
+                <Link To="#suctiontubes" class="text-decoration-none">
+                <div class="image-container">&nbsp;</div>
+                <h3 class="text-center w-100 cor-laranja mb-0">@Localizer["TUBOS DE SUCÇÃO"]</h3>
+                </Link>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mx-md-4 my-md-2">
+                <Link To="#distributionkit" class="text-decoration-none">
+                <div class="image-container">&nbsp;</div>
+                <h3 class="text-center w-100 cor-laranja mb-0">@Localizer["KIT DE DISTRIBUIÇÃO"]</h3>
+                </Link>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mx-md-4 my-md-2">
+                <Link To="#pulleyandtensioner" class="text-decoration-none">
+                    <div class="image-container">&nbsp;</div>
+                    <h3 class="text-center w-100 cor-laranja mb-0">@Localizer["POLIAS E TENSIONADORES"]</h3>
+                </Link>
+            </div>
+            
+            <div class="col-6 col-md-3 col-lg-2 mx-md-4 my-md-2">
+                <Link To="#reliefvalves" class="text-decoration-none">
+                    <div class="image-container">&nbsp;</div>
+                    <h3 class="text-center w-100 cor-laranja mb-0">@Localizer["VÁLVULAS DE ALÍVIO"]</h3>
+                </Link>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid products">
+
+    <div id="waterpump" class="row cor-fundo-cinza cor-branco px-5 py-4">
+        <div class="col-12 col-md-6 product pr-md-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["BOMBAS D'ÁGUA"]</h2>
+                    <p class="description">
+                        @Localizer["Responsáveis pela circulação do fluido refrigerante nas galerias do motor. Ao percorrer as galerias, o fluido refrigerante remove o calor e o transporta até o radiador, onde é refrigerado para poder retornar ao sistema novamente."]
+                    </p>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="/img/products/waterpump.png" class="w-75" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["REPAROS DE BOMBA"]</h2>
+                </div>
+                <div class="offset-2 col-6 text-center">
+                    <img src="/img/products/waterpump-repairkit.png" class="w-100" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 details">
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-star.png" class="w-75" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Nossos diferenciais"]</h3>
+                    <ul class="description">
+                        <li>@Localizer["Selo de alta capacidade de vedação."]</li>
+                        <li>@Localizer["Rolamento resistente de alta qualidade."]</li>
+                        <li>@Localizer["Atendem aos padrões de conformidade do equipamento original."]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-handpointer.png" class="w-100" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Fica a dica"]</h3>
+                    <ul class="description">
+                        <li>
+                            @Localizer["Limpe as superfícies de assentamento, no bloco e na bomba. Nunca use estopa, pois solta fiapos que podem obstruir o fluxo de água."]
+                        </li>
+                        <li>
+                            @Localizer["Antes de trocar a bomba, verifique o estado do ventilador e da correia."]
+                        </li>
+                        <li>
+                            @Localizer["Nunca utilize cola, adesivo ou silicone para melhorar a vedação, isso é desnecessário e perigoso. Só a junta e/ou anel de vedação são suficientes."]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="oilpump" class="row cor-fundo-cinza-alternativo cor-branco px-5 py-4">
+        <div class="col-12 col-md-6 product pr-md-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["BOMBAS DE ÓLEO"]</h2>
+                    <p class="description">
+                        @Localizer["Responsáveis pela circulação do fluido lubrificante pelo motor. Ao circular entre as partes móveis do motor, o fluido lubrificante reduz o atrito, minimizando a geração de calor e removendo as impurezas geradas durante o funcionamento do motor."]
+                    </p>
+                    <div class="row">
+                        <div class="offset-1 col-10 text-center">
+                            <img src="/img/products/oilpump.png" class="w-75" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 details">
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-star.png" class="w-75" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Nossos diferenciais"]</h3>
+                    <ul class="description">
+                        <li>@Localizer["Qualidade e confiança líder de mercado."]</li>
+                        <li>@Localizer["O melhor desempenho para cada aplicação."]</li>
+                        <li>@Localizer["Durabilidade superior."]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-handpointer.png" class="w-100" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Fica a dica"]</h3>
+                    <ul class="description">
+                        <li>
+                            @Localizer["Só tire a bomba da embalagem na hora que você for instalá-la, assim evita a entrada de algum tipo de sujeira no seu interior."]
+                        </li>
+                        <li>
+                            @Localizer["Coloque óleo na bomba e no filtro antes de instalá-la. Jamais deixe-a funcionando no vazio."]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fuelpump" class="row cor-fundo-cinza cor-branco px-5 py-4">
+        <div class="col-12 col-md-6 product pr-md-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["BOMBAS DE COMBUSTÍVEL"]</h2>
+                    <p class="description">
+                        @Localizer["Também chamadas de bomba de baixa, têm a finalidade de impulsionar o combustível até a bomba de alta ou diretamente nas unidades de injeção de combustível."]
+                    </p>
+                    <div class="row">
+                        <div class="offset-1 col-10 text-center">
+                            <img src="/img/products/fuelpump.png" class="w-75" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 details">
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-star.png" class="w-75" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Nossos diferenciais"]</h3>
+                    <ul class="description">
+                        <li>@Localizer["Alto desempenho para motores eletrônicos."]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-handpointer.png" class="w-100" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Fica a dica"]</h3>
+                    <ul class="description">
+                        <li>
+                            @Localizer["Faça a limpeza do tanque e substitua os filtros, mangueiras e abraçadeiras toda vez que trocar a bomba de combustível."]
+                        </li>
+                        <li>
+                            @Localizer["Assim como na bomba de óleo, só retire o produto da embalagem quando for aplicá-lo ao motor."]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="suctiontubes" class="row cor-fundo-cinza-alternativo cor-branco px-5 py-4">
+        <div class="col-12 col-md-6 product pr-md-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["TUBOS DE SUCÇÃO"]</h2>
+                    <p class="description">
+                        @Localizer["Conhecidos como pescador, são responsáveis por succionar o fluido lubrificante do cárter e direcioná-lo à bomba de óleo."]
+                    </p>
+                    <div class="row">
+                        <div class="offset-1 col-10 text-center">
+                            <img src="/img/products/suctiontubes.png" class="w-75" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 details">
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-star.png" class="w-75" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Nossos diferenciais"]</h3>
+                    <ul class="description">
+                        <li>@Localizer["Qualidade de fabricação Schadek."]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-handpointer.png" class="w-100" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Fica a dica"]</h3>
+                    <ul class="description">
+                        <li>
+                            @Localizer["Para melhor funcionamento do tubo de sucção, jamais retire a tela de proteção. Ela evita a entrada de partículas de sujeira na bomba de óleo e no próprio motor."]
+                        </li>
+                        <li>
+                            @Localizer["Troque o tubo de sucção sempre que substituir a bomba de óleo."]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reliefvalves" class="row cor-fundo-cinza cor-branco px-5 py-4">
+        <div class="col-12 col-md-6 product pr-md-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["VÁLVULAS DE ALÍVIO"]</h2>
+                    <p class="description">
+                        @Localizer["Regulam a pressão e vazão do fluido no sistema de lubrificação."]
+                    </p>
+                    <div class="row">
+                        <div class="offset-3 col-6 text-center">
+                            <img src="/img/products/reliefvalves.png" class="w-75" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 details">
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-star.png" class="w-75" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Nossos diferenciais"]</h3>
+                    <ul class="description">
+                        <li>@Localizer["Alta resistência e durabilidade."]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-handpointer.png" class="w-100" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Fica a dica"]</h3>
+                    <ul class="description">
+                        <li>
+                            @Localizer["Na manutenção do sistema de lubrificação, troque sempre a válvula de alívio. Se estiver em mau estado pode interferir diretamente no funcionamento do sistema."]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="distributionkit" class="row cor-fundo-cinza-alternativo cor-branco px-5 py-4">
+        <div class="col-12 col-md-6 product pr-md-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["KIT DE DISTRIBUIÇÃO"]</h2>
+                    <p class="description">
+                        @Localizer["A Schadek disponibiliza ao mercado diversas composições de Kit de Distribuição, podendo ser Simples, Parciais ou Completos."]
+                    </p>
+                    <p class="description">
+                        @Localizer["Cada Kit de Distribuição possui componentes específicos, como por exemplo: Correntes, engrenagens, tensores, alavancas, guias e retentores. Verifique atentamente a lista de componentes em cada aplicação."]
+                    </p>
+                    <p class="description">
+                        @Localizer["Os componentes do Kit de Distribuição SCHADEK possuem a garantia e a qualidade dos produtos da Schadek Automotive. Empresa líder de mercado em Bombas de Óleo e de Água, que está há 55 anos no mercado."]
+                    </p>
+                    <div class="row">
+                        <div class="offset-3 col-6 text-center">
+                            <img src="/img/products/distributionkit.png" class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 details">
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-star.png" class="w-75" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Nossos diferenciais"]</h3>
+                    <ul class="description">
+                        <li>@Localizer["Padrão de qualidade original"]</li>
+                        <li>@Localizer["Componentes de primeira linha"]</li>
+                        <li>@Localizer["Tecnologia avançada"]</li>
+                        <li>@Localizer["Estrutura resistente a durável"]</li>
+                        <li>@Localizer["Garantia Schadek"]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-handpointer.png" class="w-100" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Fica a dica"]</h3>
+                    <ul class="description">
+                        <li>
+                            @Localizer["O equilíbrio, eficiência e a sincronização de todos estes componentes é muito importante para o funcionamento do motor."]
+                        </li>
+                        <li>
+                            @Localizer["Toda aplicação, instalação, manuseio ou manutenção, deve ser realizada por pessoas habilitadas e com o auxílio de equipamentos apropriados para a instalação ou manutenção dos componentes."]
+                        </li>
+                        <li>
+                            @Localizer["Não instale o produto no veículo caso a embalagem esteja violada, ou se o produto apresentar qualquer sinal de que esteja danificado, amassado, quebrado ou com oxidações."]
+                        </li>
+                        <li>
+                            @Localizer["Recomenda-se a troca do kit de distribuição de forma preventiva a casa 100 mil KM, ou toda vez que realizar a retifica completa do motor."]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pulleyandtensioner" class="row cor-fundo-cinza cor-branco px-5 py-4">
+        <div class="col-12 col-md-6 product pr-md-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["POLIAS"]</h2>
+                    <p class="description">
+                        @Localizer["As Polias têm a função de mudar a direção da correia fazendo ela passar por outras áreas do motor, respeitando as oscilações das rotações e temperaturas sem que haja vibrações."]
+                    </p>
+                    <p class="description">
+                        @Localizer["A linha de Polia disponibilizada pela Schadek ao mercado possui Polias das Correias Dentadas, Auxiliar, Motor e da Direção Hidráulica, além de Polias do Alternador e do Tensionador, do ar-condicionado e outros modelos."]
+                    </p>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="/img/products/pulley.png" class="w-50" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase title cor-laranja">@Localizer["TENSIONADORES"]</h2>
+                    <p class="description">
+                        @Localizer["Já os Tensionadores determinam a tensão constante nas correrias, para que elas fiquem sempre em contato com as polias. A linha de Tensionadores é composta por Tensionadores para as Correias Dentadas, do Alternador, da Direção Hidráulica, do Motor e outras mais."]
+                    </p>
+                    <p class="description">
+                        @Localizer["Essa nova linha de produto da Schadek Automotive é composta por mais de 300 códigos, desenvolvidos com a mais alta tecnologia e a qualidade original. Cobrindo 90% da frota nacional leve e pesada."]
+                    </p>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="/img/products/tensioner.png" class="w-50" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 details">
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-star.png" class="w-75" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Nossos diferenciais"]</h3>
+                    <ul class="description">
+                        <li>@Localizer["Padrão de Qualidade Original"]</li>
+                        <li>@Localizer["Componentes de primeira linha"]</li>
+                        <li>@Localizer["Estrutura resistente e durável"]</li>
+                        <li>@Localizer["Melhor desempenho para cada aplicação"]</li>
+                        <li>@Localizer["Qualidade e confiança líder de mercado"]</li>
+                        <li>@Localizer["Alto desempenho"]</li>
+                        <li>@Localizer["Tecnologia avançada"]</li>
+                        <li>@Localizer["Garantia Schadek"]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pr-0">
+                    <img src="/img/icon-handpointer.png" class="w-100" />
+                </div>
+                <div class="col-10 pl-0">
+                    <h3 class="sub-title cor-cinza-superclaro">@Localizer["Fica a dica"]</h3>
+                    <ul class="description">
+                        <li>@Localizer["Recomenda-se a troca das Polias e dos Tensionadores de forma preventiva, a cada cinco anos ou 60 mil quilômetros."]</li>
+                        <li>@Localizer["O ideal é que em todas as trocas de correias, os tensionadores também sejam trocados."]</li>
+                        <li>@Localizer["Excessos de vibração na marcha lenta, ruídos ou falhas no sistema da correia de acessórios, ou problemas na parte elétrica do veículo, podem ser sinais de que as Polias e ou Tensionadores estejam com problemas."]</li>
+                        <li>@Localizer["Não instale o produto no veículo caso a embalagem esteja violada, ou se o produto apresentar qualquer sinal de que esteja danificado, amassado, quebrado ou com oxidações."]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

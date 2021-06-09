@@ -1,0 +1,78 @@
+@page "/Technology"
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<Technology> Localizer
+
+<PageHeader PageType="@typeof(Technology)" ImageName="technology.jpg" />
+
+<div class="container-fluid background py-3" style="background-image: url(../img/page-backgrounds/tech01.jpg)">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 col-md-6 col-lg-5">
+                <h3 class="super-title text-uppercase cor-branco">
+                    @Localizer["KNOW-HOW"]
+                </h3>
+                <h1 class="master-title text-uppercase cor-laranja">
+                    @Localizer["500"]
+                </h1>
+                <h3 class="title text-uppercase cor-laranja">
+                    @Localizer["PRODUTOS"]
+                </h3>
+                <h3 class="title text-uppercase cor-laranja">
+                    @Localizer["DESENVOLVIDOS"]
+                </h3>
+                <p class="description cor-branco">
+                    @Localizer["A incorporação de novas tecnologias, os investimentos constantes em equipamentos, aperfeiçoamento de processos e pessoas são o motor do crescimento da Schadek no mercado de reposição automotiva."]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid background py-3" style="background-image: url(../img/page-backgrounds/tech02.jpg)">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 offset-md-6 col-md-6 offset-lg-8 col-lg-4">
+                <h3 class="title text-uppercase cor-laranja">
+                    @Localizer["REENGENHARIA"]
+                </h3>
+                <p class="description cor-branco">
+                    @Localizer["Na Schadek, a reengenharia atingiu o estado da arte. A aplicação de recursos e metodologias avançadas de projeto, o olhar atento às necessidades dos usuários e a experiência de mais de 55 anos garantem produtos com alto nível de desempenho."]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid background py-3" style="background-image: url(../img/page-backgrounds/tech03.jpg)">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 col-md-6 col-lg-5">
+                <h3 class="title text-uppercase cor-laranja">
+                    @Localizer["EXCELÊNCIA OPERACIONAL"]
+                </h3>
+                <p class="description cor-branco">
+                    @Localizer["Os parâmetros de precisão e qualidade presentes em todos as fases do processo produtivo Schadek nascem junto com o desenho dos produtos. Nossos técnicos e engenheiros refinam cada detalhe no desenvolvimento de moldes, ferramentais, dispositivos de montagem e métodos de fabricação para maximizar a eficiência operacional e a competitividade dos produtos."]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid background py-3" style="background-image: url(../img/page-backgrounds/tech04.jpg)">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 offset-md-6 col-md-6 offset-lg-9 col-lg-3">
+                <h1 class="master-title text-uppercase cor-laranja">
+                    @Localizer["1.500"]
+                </h1>
+                <h3 class="title text-uppercase cor-laranja">
+                    @Localizer["ENSAIOS/MÊS"]
+                </h3>
+                <p class="description cor-branco">
+                    @Localizer["Laboratório dimensional equipado com moderna instrumentação assegura a qualidade durante o processo de fabricação em série."]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

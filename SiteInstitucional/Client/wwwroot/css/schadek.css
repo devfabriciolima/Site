@@ -1,0 +1,84 @@
+﻿:root {
+    --cor-laranja: #DB8E18;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cor-branco {
+    color: white;
+}
+
+.cor-laranja {
+    color: var(--cor-laranja);
+}
+
+.cor-amarelo {
+    color: rgb(186 141 26);
+}
+
+
+
+.cor-cinza-superclaro {
+    color: #C1C8CE;
+}
+
+.cor-cinza {
+    color: #475459;
+}
+
+.cor-preto {
+    color: black;
+}
+
+.cor-fundo-cinza-escuro {
+    background-color: #2F2A31;
+}
+
+.cor-fundo-cinza-clarissimo {
+    background-color: #DEE3E6;
+}
+
+.cor-fundo-preto {
+    background-color: black;
+}
+
+.cor-fundo-cinza {
+    background-color: #30252d;
+}
+
+.cor-fundo-cinza-medio {
+    background-color: #475459;
+}
+
+.cor-fundo-cinza-alternativo {
+    background-color: #2F2A31;
+}
+
+.cor-fundo-cinza-claro {
+    background-color: #C1C8CE;
+}
+
+.cor-fundo-laranja {
+    background-color: #DB8E18;
+}
+
+
+.btn-schadek {
+    background-color: #DB8E18;
+    color: #FFF;
+    border-radius: 0;
+    font-family: 'Gotham-Black';
+    border: 0;
+    height: 100%;
+}
+
+    .btn-schadek:hover {
+        background-color: #C1C8CE;
+        color: #475459;
+    }
+
+.text-shadow {
+    text-shadow: 2px 2px 2px #000000;
+}

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A linha de Polia disponibilizada pela Schadek ao mercado possui Polias das Correias Dentadas, Auxiliar, Motor e da Direção Hidráulica, além de Polias do Alternador e do Tensionador, do ar-condicionado e outros modelos." xml:space="preserve">
+    <value>The Pulley line available by Schadek to the Market has belt pulleys, auxiliary, engine and hydraulic steering, as well as alternator and tensioner pulleys, air conditioning and other models.</value>
+  </data>
+  <data name="A Schadek disponibiliza ao mercado diversas composições de Kit de Distribuição, podendo ser Simples, Parciais ou Completos." xml:space="preserve">
+    <value>Schadek makes available to the market several compositions of Distribution Kit, which can be Simple, Partial or Complete.</value>
+  </data>
+  <data name="Alta resistência e durabilidade." xml:space="preserve">
+    <value>High resistance and durability.</value>
+  </data>
+  <data name="Alto desempenho" xml:space="preserve">
+    <value>High Performance</value>
+  </data>
+  <data name="Alto desempenho para motores eletrônicos." xml:space="preserve">
+    <value>High performance for electronic engines.</value>
+  </data>
+  <data name="Antes de trocar a bomba, verifique o estado do ventilador e da correia." xml:space="preserve">
+    <value>Before replacing the pump, check the state of the fan and of the belt.</value>
+  </data>
+  <data name="As Polias têm a função de mudar a direção da correia fazendo ela passar por outras áreas do motor, respeitando as oscilações das rotações e temperaturas sem que haja vibrações." xml:space="preserve">
+    <value>The pulleys have the function of changing the direction of belt, doing it pass through other areas of the motor, respecting the oscillations of the rotations and temperatures without vibrations.</value>
+  </data>
+  <data name="Assim como na bomba de óleo, só retire o produto da embalagem quando for aplicá-lo ao motor." xml:space="preserve">
+    <value>Like with the oil pump, only remove the product from the packaging when it's time to install it in the engine.</value>
+  </data>
+  <data name="Atendem aos padrões de conformidade do equipamento original." xml:space="preserve">
+    <value>Meet compliance standards of original equipment.</value>
+  </data>
+  <data name="BOMBAS D'ÁGUA" xml:space="preserve">
+    <value>WATER PUMPS</value>
+  </data>
+  <data name="BOMBAS DE COMBUSTÍVEL" xml:space="preserve">
+    <value>FUEL PUMPS</value>
+  </data>
+  <data name="BOMBAS DE ÓLEO" xml:space="preserve">
+    <value>OIL PUMPS</value>
+  </data>
+  <data name="Cada Kit de Distribuição possui componentes específicos, como por exemplo: Correntes, engrenagens, tensores, alavancas, guias e retentores. Verifique atentamente a lista de componentes em cada aplicação." xml:space="preserve">
+    <value>Each Distribution Kit has specific components, such as: Chains, gears, tensioners, levers, guides and retainers. Check the list of components carefully in each application.</value>
+  </data>
+  <data name="Coloque óleo na bomba e no filtro antes de instalá-la. Jamais deixe-a funcionando no vazio." xml:space="preserve">
+    <value>Place the oil in the pump and in the filter before installing it. Never allow it operate while empty.</value>
+  </data>
+  <data name="Componentes de primeira linha" xml:space="preserve">
+    <value>First-rate components</value>
+  </data>
+  <data name="Conhecidos como pescador, são responsáveis por succionar o fluido lubrificante do cárter e direcioná-lo à bomba de óleo." xml:space="preserve">
+    <value>Suction tubes are responsible for suctioning lubricants from the oil pan and sending them to the oil pump.</value>
+  </data>
+  <data name="Durabilidade superior." xml:space="preserve">
+    <value>Superior durability.</value>
+  </data>
+  <data name="Essa nova linha de produto da Schadek Automotive é composta por mais de 300 códigos, desenvolvidos com a mais alta tecnologia e a qualidade original. Cobrindo 90% da frota nacional leve e pesada." xml:space="preserve">
+    <value>This new product line from Schadek Automotive consist of more than 300 codes, developed with the highest technology and original quality. Covering 90% of national light and hard fleet.</value>
+  </data>
+  <data name="Estrutura resistente a durável" xml:space="preserve">
+    <value>Sturdy and durable structure</value>
+  </data>
+  <data name="Estrutura resistente e durável" xml:space="preserve">
+    <value>Resistant and durable</value>
+  </data>
+  <data name="Excessos de vibração na marcha lenta, ruídos ou falhas no sistema da correia de acessórios, ou problemas na parte elétrica do veículo, podem ser sinais de que as Polias e ou Tensionadores estejam com problemas." xml:space="preserve">
+    <value>Excessive vibration at idling, noises or failures in the accessory belt system, or problems in the vehicles electric part, could be signal of pulleys and or tensioners are in trouble.</value>
+  </data>
+  <data name="Faça a limpeza do tanque e substitua os filtros, mangueiras e abraçadeiras toda vez que trocar a bomba de combustível." xml:space="preserve">
+    <value>Clean the fuel tank and replace filters, hose and clamps every time you replace the fuel pump.</value>
+  </data>
+  <data name="Fica a dica" xml:space="preserve">
+    <value>Recommendations</value>
+  </data>
+  <data name="Garantia Schadek" xml:space="preserve">
+    <value>Schadek Warranty</value>
+  </data>
+  <data name="Já os Tensionadores determinam a tensão constante nas correrias, para que elas fiquem sempre em contato com as polias. A linha de Tensionadores é composta por Tensionadores para as Correias Dentadas, do Alternador, da Direção Hidráulica, do Motor e outras mais." xml:space="preserve">
+    <value>The Belt Tensioners, on the other hand, determine the constant tension in the belt, so that they are always in contact with the pulleys. The Belt Tensioner line is composed of Belt Tensioners to timing belts, Alternator, hydraulic steering, engine and others.</value>
+  </data>
+  <data name="KIT DE DISTRIBUIÇÃO" xml:space="preserve">
+    <value>DISTRIBUTION KIT</value>
+  </data>
+  <data name="Limpe as superfícies de assentamento, no bloco e na bomba. Nunca use estopa, pois solta fiapos que podem obstruir o fluxo de água." xml:space="preserve">
+    <value>Clean the seating surfaces on the block and the pump. Never use cotton waste, it can release lint that can obstruct the water flow.</value>
+  </data>
+  <data name="Melhor desempenho para cada aplicação" xml:space="preserve">
+    <value>Better Performance for each application</value>
+  </data>
+  <data name="Na manutenção do sistema de lubrificação, troque sempre a válvula de alívio. Se estiver em mau estado pode interferir diretamente no funcionamento do sistema." xml:space="preserve">
+    <value>During maintenance of the lubrication systems, always replace the relief valves. If it is in a poor state-of-repair, it could interfere directly in the operation of the system.</value>
+  </data>
+  <data name="Nossos diferenciais" xml:space="preserve">
+    <value>Our differentials</value>
+  </data>
+  <data name="Nunca utilize cola, adesivo ou silicone para melhorar a vedação, isso é desnecessário e perigoso. Só a junta e/ou anel de vedação são suficientes." xml:space="preserve">
+    <value>Never use glue, adhesives or silicone to improve the sealing, it is unnecessary and dangerous. The seal and/or seal ring are sufficient.</value>
+  </data>
+  <data name="Não instale o produto no veículo caso a embalagem esteja violada, ou se o produto apresentar qualquer sinal de que esteja danificado, amassado, quebrado ou com oxidações." xml:space="preserve">
+    <value>Do not install the product in the vehicle if the packaging is broken, or if the product shows any signs that it is damaged, smashed , broken or oxidized.</value>
+  </data>
+  <data name="O equilíbrio, eficiência e a sincronização de todos estes componentes é muito importante para o funcionamento do motor." xml:space="preserve">
+    <value>The balance, efficiency and synchronization of all these components is very important for the functioning of engine.</value>
+  </data>
+  <data name="O ideal é que em todas as trocas de correias, os tensionadores também sejam trocados." xml:space="preserve">
+    <value>The better is that in all belt changes, tensioners should also be changed.</value>
+  </data>
+  <data name="O melhor desempenho para cada aplicação." xml:space="preserve">
+    <value>The best performance for each application.</value>
+  </data>
+  <data name="Os componentes do Kit de Distribuição SCHADEK possuem a garantia e a qualidade dos produtos da Schadek Automotive. Empresa líder de mercado em Bombas de Óleo e de Água, que está há 55 anos no mercado." xml:space="preserve">
+    <value>The components of the SCHADEK Distribution Kit have the guarantee and quality of Schadek Automotive products. Market leader in Oil and Water Pumps, which has been in the market for 55 years.</value>
+  </data>
+  <data name="Padrão de qualidade original" xml:space="preserve">
+    <value>Original Quality</value>
+  </data>
+  <data name="Para melhor funcionamento do tubo de sucção, jamais retire a tela de proteção. Ela evita a entrada de partículas de sujeira na bomba de óleo e no próprio motor." xml:space="preserve">
+    <value>To the improve the operation of the suction tube, never remove the protective screen. It avoids the entrance of dust particles in the oil pump and in the engine itself.</value>
+  </data>
+  <data name="POLIAS" xml:space="preserve">
+    <value>PULLEYS</value>
+  </data>
+  <data name="POLIAS E TENSIONADORES" xml:space="preserve">
+    <value>PULLEYS AND BELT TENSIONERS</value>
+  </data>
+  <data name="Qualidade de fabricação Schadek." xml:space="preserve">
+    <value>Schadek manufacturing quality.</value>
+  </data>
+  <data name="Qualidade e confiança líder de mercado" xml:space="preserve">
+    <value>Market leading quality and reliability</value>
+  </data>
+  <data name="Qualidade e confiança líder de mercado." xml:space="preserve">
+    <value>Market leader quality and reliability.</value>
+  </data>
+  <data name="Recomenda-se a troca das Polias e dos Tensionadores de forma preventiva, a cada cinco anos ou 60 mil quilômetros." xml:space="preserve">
+    <value>It is recommended to change the pulleys and belt tensioner preventively, every five years or 60 thousand kilometers.</value>
+  </data>
+  <data name="Recomenda-se a troca do kit de distribuição de forma preventiva a casa 100 mil KM, ou toda vez que realizar a retificar completa do motor." xml:space="preserve">
+    <value>It is recommended to change the Distribution Kit in a preventive manner at about 100 thousand KM or every time that you do the complete rectification of engine.</value>
+  </data>
+  <data name="Regulam a pressão e vazão do fluido no sistema de lubrificação." xml:space="preserve">
+    <value>They regulate the pressure and flow in the lubrication system.</value>
+  </data>
+  <data name="REPAROS DE BOMBA" xml:space="preserve">
+    <value>PUMP REPAIR KITS</value>
+  </data>
+  <data name="Responsáveis pela circulação do fluido lubrificante pelo motor. Ao circular entre as partes móveis do motor, o fluido lubrificante reduz o atrito, minimizando a geração de calor e removendo as impurezas geradas durante o funcionamento do motor." xml:space="preserve">
+    <value>It is responsible for the circulation of the lubricant fluid through the engine. By circulating the lubricant oil between the moving parts of the engine, the fluid reduces friction, thereby minimizing heat, and removing impurities generated during the operation of the engine.</value>
+  </data>
+  <data name="Responsáveis pela circulação do fluido refrigerante nas galerias do motor. Ao percorrer as galerias, o fluido refrigerante remove o calor e o transporta até o radiador, onde é refrigerado para poder retornar ao sistema novamente." xml:space="preserve">
+    <value>It is responsible for the circulation of the cooling fluid through channels in the engine block. While flowing through the channels, the coolant removes the heat and transports it to the radiator where the fluid is cooled prior to returning to the system.</value>
+  </data>
+  <data name="Rolamento resistente de alta qualidade." xml:space="preserve">
+    <value>High-quality resistant bearings.</value>
+  </data>
+  <data name="Selo de alta capacidade de vedação." xml:space="preserve">
+    <value>High-capacity seal.</value>
+  </data>
+  <data name="Só tire a bomba da embalagem na hora que você for instalá-la, assim evita a entrada de algum tipo de sujeira no seu interior." xml:space="preserve">
+    <value>Only remove the pump from the packaging when it's time to install it, thereby preventing the entrance of any type of impurities.</value>
+  </data>
+  <data name="Também chamadas de bomba de baixa, têm a finalidade de impulsionar o combustível até a bomba de alta ou diretamente nas unidades de injeção de combustível." xml:space="preserve">
+    <value>Also called low pressure pump, it is intended to pump fuel up to the high pressure pump, or directly into the fuel injection units.</value>
+  </data>
+  <data name="Tecnologia avançada" xml:space="preserve">
+    <value>Advanced technology</value>
+  </data>
+  <data name="TENSIONADORES" xml:space="preserve">
+    <value>BELT TENSIONER</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>PRODUCTS</value>
+  </data>
+  <data name="Toda aplicação, instalação, manuseio ou manutenção, deve ser realizada por pessoas habilitadas e com o auxílio de equipamentos apropriados para a instalação ou manutenção dos componentes." xml:space="preserve">
+    <value>Any application, installation, handling or maintenance, must be carried out for by qualified people and with support of appropriate equipment for the installation or maintenance of components.</value>
+  </data>
+  <data name="Troque o tubo de sucção sempre que substituir a bomba de óleo." xml:space="preserve">
+    <value>Replace the suction tube whenever you replace the oil pumps.</value>
+  </data>
+  <data name="TUBOS DE SUCÇÃO" xml:space="preserve">
+    <value>SUCTION TUBES</value>
+  </data>
+  <data name="VÁLVULAS DE ALÍVIO" xml:space="preserve">
+    <value>RELIEF VALVES</value>
+  </data>
+</root>

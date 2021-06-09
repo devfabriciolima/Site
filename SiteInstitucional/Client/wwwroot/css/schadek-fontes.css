@@ -1,0 +1,87 @@
+﻿/* Incluindo as fontes da Schadek */
+
+@font-face {
+    font-family: "Gotham-Thin";
+    src: url('fonts-Gotham/Gotham-Thin.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Black";
+    src: url('fonts-Gotham/Gotham-Black.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url('fonts-Gotham/Gotham-Book.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Ultra";
+    src: url('fonts-Gotham/Gotham-Ultra.otf');
+}
+
+
+@font-face {
+    font-family: "Gotham-BlackItalic";
+    src: url('fonts-Gotham/Gotham-BlackItalic.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url('fonts-Gotham/Gotham-Bold.otf');
+}
+
+@font-face {
+    font-family: "Gotham-BookItalic";
+    src: url('fonts-Gotham/Gotham-BookItalic.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Medium";
+    src: url('fonts-Gotham/Gotham-Medium.otf');
+}
+
+@font-face {
+    font-family: "Gotham MediumItalic";
+    src: url('fonts-Gotham/Gotham-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Thin";
+    src: url('fonts-Gotham/Gotham-Thin.otf');
+}
+
+@font-face {
+    font-family: "Gotham-ThinItalic";
+    src: url('fonts-Gotham/Gotham-ThinItalic.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Ultra";
+    src: url('fonts-Gotham/Gotham-Ultra.otf');
+}
+
+@font-face {
+    font-family: "Gotham-UltraItalic";
+    src: url('fonts-Gotham/Gotham-UltraItalic.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Light";
+    src: url('fonts-Gotham/Gotham-Light.otf');
+}
+
+@font-face {
+    font-family: "Gotham-XLight";
+    src: url('fonts-Gotham/Gotham-XLight.otf');
+}
+
+@font-face {
+    font-family: "Gotham-XLightItalic";
+    src: url('fonts-Gotham/Gotham-XLightItalic.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Lithium";
+    src: url('fonts-Gotham/Gotham-XLightItalic.otf');
+}

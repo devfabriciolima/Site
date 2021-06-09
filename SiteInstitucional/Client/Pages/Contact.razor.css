@@ -1,0 +1,57 @@
+﻿.title {
+    font-family: 'Gotham-Black';
+}
+
+.text {
+    font-family: 'Gotham-Book';
+}
+
+.contact {
+    background-image: url(/img/page-headers/contact-inner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.phones > div > div, .address > div.row {
+    border: 1px solid #DB8E18;
+}
+
+.phones {
+    border-bottom: 1px solid #FFF;
+}
+
+.address p.text {
+    font-size: .9em;
+}
+
+a:hover, .phones > div ::deep a:hover {
+    color: #DB8E18;
+}
+
+.contact-form .form-group {
+    margin-bottom: 0;
+}
+
+.contact-form ::deep .form-control,
+.contact-form ::deep .custom-select {
+    border-radius: 0;
+    border: none;
+    font-size: .9em;
+    font-family: 'Gotham-Book';
+}
+
+    .contact-form ::deep .form-control.invalid,
+    .contact-form ::deep .custom-select.invalid {
+        border: 2px solid red;
+    }
+
+.contact-form .form-group label {
+    color: white;
+    margin: 0;
+    font-family: 'Gotham-Book';
+    font-size: .9em;
+}
+
+.contact-form .btn-schadek {
+    color: black;
+}

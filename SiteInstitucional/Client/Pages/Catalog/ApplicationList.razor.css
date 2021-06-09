@@ -1,0 +1,26 @@
+﻿thead {
+    font-family: 'Gotham-Black';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .8em;
+    border-bottom: 5px solid #475459;
+}
+
+    thead th {
+        width: 20%;
+    }
+
+tbody {
+    font-family: 'Gotham-Book';
+    font-size: .8em;
+}
+
+    tbody td {
+        border-bottom: thin solid #475459;
+    }
+
+@media (max-width: 767px) {
+    .table th:not(:last-child) {
+        width: 43%;
+    }
+}
